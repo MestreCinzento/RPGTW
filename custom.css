@@ -1,67 +1,40 @@
-/* === RPG Dark Theme for FlowerShow ===
-   - Dark por padrão
-   - Paleta: grafite, vinho, dourado antigo
-   - Tipos de letra de fantasia + leitura confortável
-*/
-
-/* Títulos com cara de RPG + texto legível */
+/* === RPG Dark for Flowershow === */
+/* Fontes para títulos e corpo */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
-/* ---------- Base de cores (DARK como padrão) ---------- */
-:root {
-  /* Paleta principal */
-  --fs-bg: #0e0e11;              /* fundo principal */
-  --fs-bg-elev: #141419;         /* elementos elevados (cards/nav) */
-  --fs-surface: #1a1a22;         /* superfícies / blocos */
-  --fs-text: #e7e3dc;            /* texto primário */
-  --fs-text-muted: #b9b4ac;      /* texto secundário */
-  --fs-primary: #d4af37;         /* dourado */
-  --fs-primary-contrast: #0b0b0e;
-  --fs-accent: #7a1f2b;          /* vinho */
-  --fs-accent-2: #375a7a;        /* azul aço */
-  --fs-link: #e2c15e;            /* links */
+/* ---- Paleta base (dark) ---- */
+:root,
+[data-theme="dark"] {
+  --fs-bg: #0e0e11;
+  --fs-bg-elev: #141419;
+  --fs-surface: #1a1a22;
+  --fs-text: #e7e3dc;
+  --fs-text-muted: #b9b4ac;
+  --fs-primary: #d4af37;      /* dourado */
+  --fs-accent: #7a1f2b;       /* vinho */
+  --fs-accent-2: #375a7a;     /* aço azul */
+  --fs-link: #e2c15e;
   --fs-link-hover: #ffd86a;
-
-  /* Bordas/brilhos */
   --fs-border: #2a2a33;
-  --fs-glow: rgba(212, 175, 55, 0.35);
-
-  /* Código */
+  --fs-glow: rgba(212,175,55,.35);
   --fs-code-bg: #111116;
   --fs-code-border: #2b2b34;
   --fs-code-text: #f5f5f5;
 
-  /* Callouts */
-  --fs-callout-info: #244a63;
-  --fs-callout-warn: #6a4a1b;
-  --fs-callout-tip:  #2e5a3b;
+  /* Mapeia para nomes comuns que alguns temas usam */
+  --color-primary: var(--fs-primary);
+  --color-bg: var(--fs-bg);
+  --color-text: var(--fs-text);
+  --color-muted: var(--fs-text-muted);
+  --color-surface: var(--fs-surface);
+  --border-color: var(--fs-border);
 }
 
-/* ---------- Opcional: tema claro futuro (caso adicione toggle) ---------- */
-:root[data-theme="light"] {
-  --fs-bg: #f5efe6;
-  --fs-bg-elev: #fbf8f2;
-  --fs-surface: #fffdf8;
-  --fs-text: #2a261f;
-  --fs-text-muted: #5e574b;
-  --fs-primary: #8c6a00;
-  --fs-primary-contrast: #fff7df;
-  --fs-accent: #a43a46;
-  --fs-accent-2: #385a7a;
-  --fs-link: #8c6a00;
-  --fs-link-hover: #b78a00;
-  --fs-border: #e6decf;
-  --fs-glow: rgba(140,106,0,0.25);
-  --fs-code-bg: #fff8ea;
-  --fs-code-border: #efe4cf;
-  --fs-code-text: #2a261f;
-}
-
-/* ---------- Fundo e tipografia ---------- */
+/* ---- Plano de fundo e tipografia ---- */
 html, body {
   background:
-    radial-gradient(1200px 800px at 80% -10%, rgba(116, 24, 34, 0.08), transparent 60%),
-    radial-gradient(900px 600px at -10% 80%, rgba(55, 90, 122, 0.08), transparent 60%),
+    radial-gradient(1200px 800px at 80% -10%, rgba(116,24,34,.08), transparent 60%),
+    radial-gradient(900px 600px at -10% 80%, rgba(55,90,122,.08), transparent 60%),
     linear-gradient(180deg, #0c0c0f 0%, var(--fs-bg) 20%, var(--fs-bg) 100%);
   color: var(--fs-text);
   font-family: "Crimson Text", ui-serif, Georgia, "Times New Roman", serif;
@@ -69,51 +42,59 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4 {
+/* Vários temas Flowershow usam classes utilitárias/Tailwind;
+   ainda assim, estilizar tags garante cobertura. */
+h1, h2, h3, h4, h5, h6 {
   font-family: "Cinzel", ui-serif, Georgia, serif;
   color: var(--fs-text);
-  letter-spacing: 0.4px;
+  letter-spacing: .4px;
 }
 h1 { font-weight: 800; font-size: clamp(1.8rem, 2.6vw, 2.4rem); }
 h2 { font-weight: 700; font-size: clamp(1.5rem, 2.2vw, 2rem); }
 h3 { font-weight: 600; font-size: clamp(1.25rem, 1.8vw, 1.5rem); }
 
-/* ---------- Links ---------- */
+/* Ornamentos RPG nos subtítulos */
+h2::before, h2::after {
+  content: "✦";
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  color: rgba(212,175,55,.7);
+  margin: 0 .5rem;
+}
+
+/* Links */
 a {
   color: var(--fs-link);
   text-decoration: none;
-  border-bottom: 1px dashed rgba(226,193,94,0.35);
+  border-bottom: 1px dashed rgba(226,193,94,.35);
   transition: color .2s ease, text-shadow .2s ease, border-color .2s ease;
 }
 a:hover {
   color: var(--fs-link-hover);
   text-shadow: 0 0 8px var(--fs-glow);
-  border-color: rgba(255,216,106,0.7);
+  border-color: rgba(255,216,106,.7);
 }
 
-/* ---------- Navegação / Header ---------- */
-header, .navbar, .site-header {
-  background: linear-gradient(180deg, rgba(20,20,25,0.9), rgba(20,20,25,0.65));
+/* Header / Navbar (classes variam entre temas, cobrimos tags comuns) */
+header, nav, .navbar, .site-header {
+  background: linear-gradient(180deg, rgba(20,20,25,.9), rgba(20,20,25,.65));
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--fs-border);
   box-shadow: 0 10px 30px -20px var(--fs-glow);
 }
-.navbar a, header a {
-  font-weight: 600;
-}
 
-/* ---------- Cards / containers ---------- */
-.card, .content, .page, .note, main article, .post {
+/* Conteúdo, cards, artigos */
+main, article, .content, .prose, .card, .page, .post, .note {
   background: linear-gradient(180deg, var(--fs-bg-elev), var(--fs-surface));
   border: 1px solid var(--fs-border);
   border-radius: 14px;
   box-shadow:
-    0 0 0 1px rgba(255,255,255,0.02) inset,
+    0 0 0 1px rgba(255,255,255,.02) inset,
     0 10px 35px -20px var(--fs-glow);
   padding: clamp(14px, 2vw, 22px);
 }
 
-/* ---------- Botões ---------- */
+/* Botões (inclui giscus/controles padrão) */
 button, .btn, input[type="submit"], .button {
   background: linear-gradient(180deg, #2b2b32, #1f1f27);
   color: var(--fs-text);
@@ -121,31 +102,22 @@ button, .btn, input[type="submit"], .button {
   border-radius: 10px;
   padding: 10px 14px;
   font-weight: 600;
-  transition: transform .06s ease, box-shadow .2s ease, border-color .2s ease;
+  transition: transform .06s ease, box-shadow .2s, border-color .2s;
 }
 button:hover, .btn:hover, input[type="submit"]:hover, .button:hover {
   border-color: var(--fs-primary);
-  box-shadow: 0 0 0 2px rgba(212,175,55,0.15), 0 6px 24px -12px var(--fs-glow);
+  box-shadow: 0 0 0 2px rgba(212,175,55,.15), 0 6px 24px -12px var(--fs-glow);
 }
 button:active, .btn:active { transform: translateY(1px); }
 
-/* ---------- Destaques “RPG” ---------- */
-.rpg-title, h1.site-title, .logo-text {
+/* Destaque de título do site */
+h1.site-title, .logo-text {
   color: var(--fs-primary);
   text-shadow: 0 0 10px var(--fs-glow);
   letter-spacing: 1px;
 }
 
-/* Pequenos ornamentos laterais em títulos */
-h2::before, h2::after {
-  content: "✦";
-  font-family: "Cinzel", serif;
-  font-weight: 600;
-  color: rgba(212,175,55,0.7);
-  margin: 0 .5rem;
-}
-
-/* ---------- Listas, tabelas, citações ---------- */
+/* Listas / tabelas / citações */
 blockquote {
   background: linear-gradient(180deg, #17171d, #15151a);
   border-left: 3px solid var(--fs-primary);
@@ -161,16 +133,10 @@ table {
   border-radius: 10px;
   overflow: hidden;
 }
-th, td {
-  padding: 10px 12px;
-  border-bottom: 1px solid var(--fs-border);
-}
-th { background: #1d1d26; color: var(--fs-text); }
+th, td { padding: 10px 12px; border-bottom: 1px solid var(--fs-border); }
+th { background: #1d1d26; }
 
-/* ---------- Código ---------- */
-code, pre code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-}
+/* Código */
 pre {
   background: var(--fs-code-bg);
   color: var(--fs-code-text);
@@ -178,37 +144,17 @@ pre {
   border-radius: 12px;
   padding: 12px 14px;
   overflow: auto;
-  box-shadow: 0 8px 24px -18px rgba(0,0,0,0.55);
+  box-shadow: 0 8px 24px -18px rgba(0,0,0,.55);
 }
 code:not(pre code) {
   background: #1a1a22;
   color: #f0e7d8;
   border: 1px solid #2e2e38;
-  padding: 0.15em 0.4em;
+  padding: .15em .4em;
   border-radius: 6px;
 }
 
-/* ---------- Tags / chips ---------- */
-.tag, .pill, .label {
-  display: inline-block;
-  background: linear-gradient(180deg, #24242c, #1c1c23);
-  color: var(--fs-text);
-  border: 1px solid var(--fs-border);
-  border-radius: 999px;
-  padding: 4px 10px;
-  font-size: 0.9em;
-}
-.tag[data-type~="warning"] { border-color: #b07f28; color: #ffd86a; }
-.tag[data-type~="info"]    { border-color: #2f5a7a; color: #a7c8e6; }
-.tag[data-type~="tip"]     { border-color: #2d6a3b; color: #b4e3c2; }
-
-/* ---------- Callouts (se o tema usar classes similares) ---------- */
-.callout.info  { background: linear-gradient(180deg, #16242f, #14222b); border-left: 3px solid #2f86c7; }
-.callout.warn  { background: linear-gradient(180deg, #2a1e0f, #22190c); border-left: 3px solid #c7922f; }
-.callout.tip   { background: linear-gradient(180deg, #11271a, #0f2116); border-left: 3px solid #2fc77d; }
-.callout .title { font-weight: 700; color: var(--fs-text); }
-
-/* ---------- Pesquisar / inputs ---------- */
+/* Inputs / busca / TOC */
 input[type="text"], input[type="search"], input[type="email"], textarea {
   background: #16161c;
   color: var(--fs-text);
@@ -217,31 +163,23 @@ input[type="text"], input[type="search"], input[type="email"], textarea {
   padding: 10px 12px;
 }
 input::placeholder, textarea::placeholder { color: #8f8c85; }
+.toc, .table-of-contents {
+  background: linear-gradient(180deg, #141419, #15151b);
+  border: 1px solid var(--fs-border);
+  border-radius: 12px;
+  padding: 10px 14px;
+}
 
-/* ---------- Rodapé ---------- */
+/* Rodapé */
 footer {
   color: var(--fs-text-muted);
   border-top: 1px solid var(--fs-border);
-  background: linear-gradient(180deg, rgba(20,20,25,0.65), rgba(20,20,25,0.9));
+  background: linear-gradient(180deg, rgba(20,20,25,.65), rgba(20,20,25,.9));
 }
 
-/* ---------- Acessibilidade / foco ---------- */
+/* Foco / acessibilidade */
 :focus-visible {
   outline: 2px solid var(--fs-primary);
   outline-offset: 2px;
-  box-shadow: 0 0 0 4px rgba(212,175,55,0.25);
-}
-
-/* ---------- Compatibilidade geral ---------- */
-/* Se o tema usar variáveis "comuns", mapeamos também: */
-:root {
-  --color-primary: var(--fs-primary);
-  --color-bg: var(--fs-bg);
-  --color-text: var(--fs-text);
-  --color-muted: var(--fs-text-muted);
-  --color-surface: var(--fs-surface);
-  --border-color: var(--fs-border);
-}
-body, .container, .app, #__next {
-  background: transparent;
+  box-shadow: 0 0 0 4px rgba(212,175,55,.25);
 }
