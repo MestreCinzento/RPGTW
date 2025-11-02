@@ -21,3 +21,4 @@
     Esse site é inspirado na grande obra do mestre Andrzej Sapkowski, sem fins lucrativos.
   </p>
 </div>
+![[_footer]]
