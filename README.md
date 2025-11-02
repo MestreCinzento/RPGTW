@@ -5,7 +5,7 @@
 
 
 
-<br /><br /><br /><br /><br /><br />
+<br />
 ---
 <p
   style={{
@@ -16,8 +16,7 @@
     marginTop: "auto",
     paddingBottom: "1rem",
   }}
->
-  Uma parte do conteúdo deste site é adaptado da{" "}
+>Uma parte do conteúdo deste site é adaptado da:{" "}
   <a
     href="https://witcher.fandom.com/wiki/Witcher_Wiki"
     style={{ textDecoration: "none" }}
@@ -31,22 +30,16 @@
   >
     GFDL&nbsp;1.3
   </a>
-  .
   <br />
-  <br />
-  Informações adicionais também baseadas na{" "}
+  Informações adicionais também baseadas na:{" "}
   <a
     href="https://witcher.fandom.com/pt-br/"
     style={{ textDecoration: "none" }}
   >
-    The Witcher Wiki (pt-BR)
+    The Witcher Wiki pt-BR
   </a>
-  .
-  <br />
   <br />
   Inspirado nas obras do mestre Andrzej Sapkowski, 
-  <br />
-  <br />
   sem fins lucrativos.
 </p>
 
