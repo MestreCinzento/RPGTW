@@ -1,9 +1,7 @@
 {
-  "showSidebar": true
-}
-{
-"nav": {
-    "logo": "Logo.png",
-    "title": "Os Contos Esquecidos"
-  }
+  "showSidebar": true,
+  "nav": {
+  "logo": "Logo.png",
+  "title": "Os Contos Esquecidos"
+    }
 }
