@@ -6,7 +6,6 @@
 
 
 
-
 <div className="site-footer">
   <p>
     Parte do conteúdo deste site é adaptado da
@@ -21,4 +20,3 @@
     Esse site é inspirado na grande obra do mestre Andrzej Sapkowski, sem fins lucrativos.
   </p>
 </div>
-![[_footer]]
