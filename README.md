@@ -8,7 +8,7 @@
 
 ---
 
-<div align="center" style="opacity:.75; font-size:.8rem;">
+<div align="center" style="opacity:.85; font-size:.9rem;">
 
 **Atribuição de conteúdo**
 
