@@ -18,7 +18,7 @@
   }}
 >
  <p>
-  Uma parte do conteúdo deste site é adaptado da
+ Uma parte do conteúdo deste site é adaptado da
   <a 
     href="https://witcher.fandom.com/wiki/Witcher_Wiki" 
     style={{ textDecoration: "none" }}
@@ -36,4 +36,5 @@
   Inspirado nas obras do mestre Andrzej Sapkowski, 
   <p></p>
   sem fins lucrativos.
-</p>
+ </p>
+  
