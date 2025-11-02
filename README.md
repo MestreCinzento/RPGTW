@@ -11,7 +11,7 @@
   style={{
     textAlign: "center",
     fontSize: "0.8rem",
-    lineHeight: "0.3",
+    lineHeight: "0.1",
     opacity: 0.85,
     marginTop: "auto",
     paddingBottom: "1rem",
@@ -37,6 +37,7 @@
   </a>
   <br />
   Inspirado nas obras do mestre Andrzej Sapkowski,
+  <p></p>
   sem fins lucrativos.
 </p>
 
