@@ -5,3 +5,19 @@
   "title": "Os Contos Esquecidos"
   }
 }
+<script src="https://giscus.app/client.js"
+        data-repo="mestrecinzento/RPGTW"
+        data-repo-id="R_kgDOQNlKlg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQNlKls4CxWUP"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="pt"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
