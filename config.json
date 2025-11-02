@@ -4,7 +4,6 @@
   "logo": "Logo.png",
   "title": "Os Contos Esquecidos"
   }
-}
 <script src="https://giscus.app/client.js"
         data-repo="mestrecinzento/RPGTW"
         data-repo-id="R_kgDOQNlKlg"
@@ -21,3 +20,4 @@
         crossorigin="anonymous"
         async>
 </script>
+}
