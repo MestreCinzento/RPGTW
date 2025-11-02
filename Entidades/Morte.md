@@ -1,0 +1,1 @@
+Sempre presente, nunca atrasada.
