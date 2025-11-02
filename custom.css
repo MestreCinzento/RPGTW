@@ -8,8 +8,8 @@
   --fs-bg: #0e0e11;
   --fs-bg-elev: #141419;
   --fs-surface: #1a1a22;
-  --fs-text: #f4f1eb;         /* texto mais claro */
-  --fs-text-muted: #c8c3ba;   /* texto secundário um pouco mais claro */
+  --fs-text: #f6f3ec;        /* texto principal mais claro */
+  --fs-text-muted: #d0cbc2;  /* texto secundário mais legível */
   --fs-primary: #d4af37;      /* dourado */
   --fs-accent: #7a1f2b;       /* vinho */
   --fs-accent-2: #375a7a;     /* aço azul */
@@ -183,8 +183,31 @@ footer {
   outline-offset: 2px;
   box-shadow: 0 0 0 4px rgba(212,175,55,.25);
 }
-/* Seleção de texto (quando arrasta com o mouse) */
+/* Seleção de texto (arrastar com mouse) */
 ::selection {
   background: rgba(212, 175, 55, 0.35); /* dourado translúcido */
-  color: #ffffff;                       /* texto fica claro ao selecionar */
+  color: #ffffff; /* texto claro */
 }
+/* === CONTRASTE DE TEXTO MELHORADO === */
+:root,
+[data-theme="dark"] {
+  --fs-text: #f6f3ec;        /* texto principal */
+  --fs-text-muted: #d0cbc2;  /* texto secundário */
+}
+
+/* === LINKS MAIS VISÍVEIS === */
+a {
+  color: #f2d87c; /* dourado mais claro */
+  border-bottom: 1px dashed rgba(242,216,124,0.45);
+  text-decoration-color: rgba(242,216,124,0.35);
+  text-underline-offset: 3px;
+}
+a:hover {
+  color: #ffe8a4;
+  border-bottom-color: rgba(255,232,164,0.9);
+  text-shadow: 0 0 8px rgba(212,175,55,0.4);
+}
+
+/* === SELEÇÃO DE TEXTO (CTRL+A ou arrastar) === */
+::selection {
+  background: rgba(212, 175, 5
