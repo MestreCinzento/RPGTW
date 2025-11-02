@@ -17,26 +17,23 @@
     paddingBottom: "1rem",
   }}
 >
-  Uma parte do conteúdo deste site é adaptado da{" "}
+ <p>
+  Uma parte do conteúdo deste site é adaptado da
   <a 
     href="https://witcher.fandom.com/wiki/Witcher_Wiki" 
     style={{ textDecoration: "none" }}
-    >Witcher Wiki (Fandom) 
-  </a>{" "}
-  , sob licença{" "}
+    >Witcher Wiki (Fandom)</a>, sob licença
   <a 
     href="https://www.gnu.org/licenses/fdl-1.3.html" 
     style={{ textDecoration: "none" }}
-    >GFDL&nbsp;1.3 
-  </a>{" "}
-  Informações adicionais também baseadas na{" "}
+    >GFDL&nbsp;1.3 </a>.
+  Informações adicionais também baseadas na
   <a 
     href="https://witcher.fandom.com/pt-br/" 
     style={{ textDecoration: "none" }}
-    >The Witcher Wiki pt-BR 
-  </a>
+    >The Witcher Wiki pt-BR</a>.
+  <p></p>
   Inspirado nas obras do mestre Andrzej Sapkowski, 
   <p></p>
   sem fins lucrativos.
-</p>
-
+  </p>
