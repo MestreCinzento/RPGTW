@@ -8,8 +8,8 @@
   --fs-bg: #0e0e11;
   --fs-bg-elev: #141419;
   --fs-surface: #1a1a22;
-  --fs-text: #e7e3dc;
-  --fs-text-muted: #b9b4ac;
+  --fs-text: #f4f1eb;         /* texto mais claro */
+  --fs-text-muted: #c8c3ba;   /* texto secundário um pouco mais claro */
   --fs-primary: #d4af37;      /* dourado */
   --fs-accent: #7a1f2b;       /* vinho */
   --fs-accent-2: #375a7a;     /* aço azul */
@@ -182,4 +182,9 @@ footer {
   outline: 2px solid var(--fs-primary);
   outline-offset: 2px;
   box-shadow: 0 0 0 4px rgba(212,175,55,.25);
+}
+/* Seleção de texto (quando arrasta com o mouse) */
+::selection {
+  background: rgba(212, 175, 55, 0.35); /* dourado translúcido */
+  color: #ffffff;                       /* texto fica claro ao selecionar */
 }
