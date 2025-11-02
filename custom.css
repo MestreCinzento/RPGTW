@@ -1,81 +1,72 @@
-/* ===== RPG Dark — versão mínima e robusta ===== */
+/* === RPG Dark Theme for FlowerShow === */
 
-/* Tipos opcionais (pode remover se não quiser carregar do Google) */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Crimson+Text:wght@400;600&display=swap');
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
-/* Paleta (direto nas propriedades, sem depender de variáveis do tema) */
+/* ---------- Base de cores (DARK como padrão) ---------- */
 :root {
-  --bg: #0e0e11;
-  --bg-elev: #141419;
-  --surface: #1a1a22;
-  --text: #f6f3ec;       /* off-white */
-  --text-muted: #d0cbc2;
-  --gold: #d4af37;       /* dourado hover */
-  --link: #f2d87c;       /* link visível */
-  --link-hover: #ffe8a4;
-  --border: #2a2a33;
-  --code-bg: #111116;
-  --code-border: #2b2b34;
-  --code-text: #f5f5f5;
+  --fs-bg: #0e0e11;
+  --fs-bg-elev: #141419;
+  --fs-surface: #1a1a22;
+  --fs-text: #f6f3ec;        /* texto principal mais claro */
+  --fs-text-muted: #d2ccc4;  /* texto secundário mais visível */
+  --fs-primary: #d4af37;
+  --fs-primary-contrast: #0b0b0e;
+  --fs-accent: #7a1f2b;
+  --fs-accent-2: #375a7a;
+  --fs-link: #e2c15e;
+  --fs-link-hover: #ffd86a;
+  --fs-border: #2a2a33;
+  --fs-glow: rgba(212,175,55,0.35);
+  --fs-code-bg: #111116;
+  --fs-code-border: #2b2b34;
+  --fs-code-text: #ffffff;
 }
 
-/* Plano de fundo + texto base */
+/* ---------- Fundo e tipografia ---------- */
 html, body {
   background:
-    radial-gradient(1200px 800px at 80% -10%, rgba(116,24,34,.08), transparent 60%),
-    radial-gradient(900px 600px at -10% 80%, rgba(55,90,122,.08), transparent 60%),
-    linear-gradient(180deg, #0c0c0f 0%, var(--bg) 20%, var(--bg) 100%);
-  color: var(--text);
+    radial-gradient(1200px 800px at 80% -10%, rgba(116, 24, 34, 0.08), transparent 60%),
+    radial-gradient(900px 600px at -10% 80%, rgba(55, 90, 122, 0.08), transparent 60%),
+    linear-gradient(180deg, #0c0c0f 0%, var(--fs-bg) 20%, var(--fs-bg) 100%);
+  color: var(--fs-text);
   font-family: "Crimson Text", ui-serif, Georgia, "Times New Roman", serif;
   line-height: 1.6;
-  text-rendering: optimizeLegibility;
 }
 
-/* Títulos com “cara” de RPG */
-h1, h2, h3, h4, h5, h6 {
+/* Títulos */
+h1, h2, h3, h4 {
   font-family: "Cinzel", ui-serif, Georgia, serif;
-  color: var(--text);
+  color: var(--fs-text);
 }
 h1 { font-weight: 800; }
 h2 { font-weight: 700; }
 h3 { font-weight: 600; }
+
+/* Ornamentos nos subtítulos */
 h2::before, h2::after {
-  content: "✦"; margin: 0 .5rem; color: rgba(212,175,55,.75);
+  content: "✦";
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  color: rgba(212,175,55,0.7);
+  margin: 0 .5rem;
 }
 
-/* Conteúdo principal (cobre boa parte dos layouts do FlowerShow) */
-.prose, main, article, .content, .page, .post, .note {
-  background: linear-gradient(180deg, var(--bg-elev), var(--surface));
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: clamp(14px, 2vw, 22px);
-}
-
-/* Texto secundário */
-.prose p, p, li { color: var(--text); }
-.muted, .text-muted, small { color: var(--text-muted); }
-
-/* Links visíveis */
-.prose a, a {
-  color: var(--link);
+/* Links */
+a {
+  color: var(--fs-link);
   text-decoration: none;
-  border-bottom: 1px dashed rgba(242,216,124,.45);
-  text-underline-offset: 3px;
+  border-bottom: 1px dashed rgba(226,193,94,0.35);
 }
-.prose a:hover, a:hover {
-  color: var(--link-hover);
-  border-bottom-color: rgba(255,232,164,.9);
-  text-shadow: 0 0 8px rgba(212,175,55,.35);
-}
-
-/* Seleção de texto (arrastar o mouse) */
-::selection {
-  background: rgba(212,175,55,.35);
-  color: #fff;
+a:hover {
+  color: var(--fs-link-hover);
+  text-shadow: 0 0 8px var(--fs-glow);
+  border-color: rgba(255,216,106,0.7);
 }
 
-/* Botões — texto off-white; dourado NO HOVER/FOCUS/ACTIVE */
-button, .btn, [role="button"], input[type="submit"], .button {
-  color: var(--text) !important;
-  background: linear-gradient(180deg, #2b2b32, #1f1f27);
-  border: 1px solid var(--borde
+/* Cards e conteúdo */
+.card, .content, .page, main article, .post {
+  background: linear-gradient(180deg, var(--fs-bg-elev), var(--fs-surface));
+  border: 1px solid var(--fs-border);
+  border-radius: 14px;
+  box-sh
