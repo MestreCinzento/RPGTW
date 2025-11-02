@@ -1,3 +1,15 @@
+/* Footer manual */
+.site-footer {
+  width: 100%;
+  text-align: center;
+  padding: 18px 10px;
+  font-size: 0.85rem;
+  color: var(--fs-text-muted);
+  border-top: 1px solid var(--fs-border);
+  margin-top: 40px;
+  opacity: 0.8;
+}
+
 /* === RPG Dark for Flowershow === */
 
 /* Importa as fontes usadas nos títulos e no corpo do texto */
