@@ -1,135 +1,226 @@
 /* === RPG Dark for Flowershow === */
-/* Fontes usadas no tema */
+
+/* Importa as fontes usadas nos títulos e no corpo do texto */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
 /* ---- Paleta base (dark) ---- */
 :root,
 [data-theme="dark"] {
-  --fs-bg: #0e0e11;          /* Fundo geral da página */
-  --fs-bg-elev: #141419;     /* Fundo de elementos "elevados" (cards, seções, menus) */
-  --fs-surface: #1a1a22;     /* Fundo de superfícies internas (artigos, caixas, sidebar) */
-  --fs-text: #e7e3dc;        /* Cor do texto principal */
-  --fs-text-muted: #b9b4ac;  /* Cor de textos secundários (descrições, subtítulos, rodapé) */
-  --fs-primary: #d4af37;     /* Dourado — cor principal usada em destaques, bordas e hovers */
-  --fs-accent: #7a1f2b;      /* Vermelho vinho — acentos visuais, detalhes temáticos */
-  --fs-accent-2: #375a7a;    /* Azul aço — acento secundário opcional */
-  --fs-link: #e2c15e;        /* Cor dos links normais */
-  --fs-link-hover: #ffd86a;  /* Cor dos links quando o mouse passa por cima */
-  --fs-border: #2a2a33;      /* Cor das bordas (cards, tabelas, divisores) */
-  --fs-glow: rgba(212,175,55,.35); /* Brilho dourado suave usado em sombras */
-  --fs-code-bg: #111116;     /* Fundo de blocos de código */
-  --fs-code-border: #2b2b34; /* Borda de blocos de código */
-  --fs-code-text: #f5f5f5;   /* Texto dentro de blocos de código */
 
-  /* Compatibilidade com outros temas Flowershow */
-  --color-primary: var(--fs-primary);  /* Mapeia o dourado para temas que usam "color-primary" */
-  --color-bg: var(--fs-bg);            /* Mapeia o fundo global */
-  --color-text: var(--fs-text);        /* Mapeia o texto principal */
-  --color-muted: var(--fs-text-muted); /* Mapeia o texto secundário */
-  --color-surface: var(--fs-surface);  /* Mapeia superfícies (cards/boxes) */
-  --border-color: var(--fs-border);    /* Mapeia cor de borda */
+  --fs-bg: #0e0e11;              /* Fundo global do site (cor de fundo principal) */
+
+  --fs-bg-elev: #141419;         /* Fundo de elementos elevados (navbar, cards, abas, sidebar etc.) */
+
+  --fs-surface: #1a1a22;         /* Fundo de superfícies internas, ex: caixas de conteúdo / posts */
+
+  --fs-text: #e7e3dc;            /* Cor do texto principal (parágrafos, títulos, botões) */
+
+  --fs-text-muted: #e2c15e;      /* Cor de texto secundário / descrição / sidebar (você setou como dourado) */
+
+  --fs-primary: #d4af37;         /* Cor dourada principal (usada em hover, bordas, destaques) */
+
+  --fs-accent: #7a1f2b;          /* Cor de acento vinho (não muito usada, mas disponível) */
+
+  --fs-accent-2: #375a7a;        /* Cor de acento azul aço (secundária) */
+
+  --fs-link: #e2c15e;            /* Cor dos links normais */
+
+  --fs-link-hover: #e2c15e;      /* Cor dos links no hover (igual à normal no seu código) */
+
+  --fs-border: #2a2a33;          /* Cor de borda de caixas, tabelas, inputs, divs */
+
+  --fs-glow: rgba(212,175,55,.35); /* Brilho dourado suave (usado em sombras, hover etc.) */
+
+  --fs-code-bg: #111116;         /* Fundo dos blocos de código */
+
+  --fs-code-border: #2b2b34;     /* Cor da borda do bloco de código */
+
+  --fs-code-text: #f5f5f5;       /* Cor do texto dentro dos blocos de código */
+
+
+  /* Mapeamentos para compatibilidade com temas do Flowershow que usam nomes genéricos */
+  --color-primary: var(--fs-primary);  /* Mapeia "cor primária" para o dourado */
+  --color-bg: var(--fs-bg);            /* Fundo global */
+  --color-text: var(--fs-text);        /* Texto principal */
+  --color-muted: var(--fs-text-muted); /* Texto secundário */
+  --color-surface: var(--fs-surface);  /* Fundo das superfícies internas */
+  --border-color: var(--fs-border);    /* Cor de borda */
 }
 
 /* ---- Plano de fundo e tipografia ---- */
 html, body {
   background:
-    /* Gradientes sutis para dar textura ao fundo */
+    /* Textura visual com dois gradientes circulares + um gradiente vertical */
     radial-gradient(1200px 800px at 80% -10%, rgba(116,24,34,.08), transparent 60%),
     radial-gradient(900px 600px at -10% 80%, rgba(55,90,122,.08), transparent 60%),
     linear-gradient(180deg, #0c0c0f 0%, var(--fs-bg) 20%, var(--fs-bg) 100%);
-  color: var(--fs-text); /* Texto padrão */
-  font-family: "Crimson Text", ui-serif, Georgia, "Times New Roman", serif;
-  line-height: 1.6;
+
+  color: var(--fs-text);                           /* Cor padrão do texto */
+  font-family: "Crimson Text", ui-serif, Georgia;  /* Fonte usada no corpo */
+  line-height: 1.6;                                /* Altura da linha */
+  text-rendering: optimizeLegibility;              /* Melhora suavização do texto */
 }
 
-/* ---- Títulos ---- */
+/* Aplica estilos aos títulos */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Cinzel", serif; /* Fonte medieval */
-  color: var(--fs-text);        /* Mesma cor do texto principal */
+  font-family: "Cinzel", serif; /* Fonte medieval para títulos */
+  color: var(--fs-text);        /* Cor do texto dos títulos */
+  letter-spacing: .4px;         /* Pequeno espaçamento entre letras */
 }
+
+/* Ajusta tamanho e peso de cada nível de título */
+h1 { font-weight: 800; font-size: clamp(1.8rem, 2.6vw, 2.4rem); }
+h2 { font-weight: 700; font-size: clamp(1.5rem, 2.2vw, 2rem); }
+h3 { font-weight: 600; font-size: clamp(1.25rem, 1.8vw, 1.5rem); }
+
+/* Ornamento “✦” nos títulos H2 (antes e depois do texto) */
 h2::before, h2::after {
-  content: "✦";                 /* Símbolo decorativo RPG */
-  color: rgba(212,175,55,.7);   /* Dourado translúcido */
+  content: "✦";                     /* Símbolo */
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  color: rgba(212,175,55,.7);       /* Dourado semi-transparente */
+  margin: 0 .5rem;
 }
 
-/* ---- Links ---- */
+/* Estilização geral de links */
 a {
-  color: var(--fs-link);         /* Dourado suave */
-  border-bottom: 1px dashed rgba(226,193,94,.35);
-}
-a:hover {
-  color: var(--fs-link-hover);   /* Dourado mais forte no hover */
-  text-shadow: 0 0 8px var(--fs-glow);
+  color: var(--fs-link);                                   /* Cor do link */
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(226,193,94,.35);          /* Linha tracejada dourada clara */
+  transition: color .2s ease, text-shadow .2s ease, border-color .2s ease;
 }
 
-/* ---- Header / Navbar ---- */
+/* Estilização no hover dos links */
+a:hover {
+  color: var(--fs-link-hover);                             /* Cor ao passar o mouse */
+  text-shadow: 0 0 8px var(--fs-glow);                     /* Brilho dourado */
+  border-color: rgba(255,216,106,.7);                      /* Borda mais forte */
+}
+
+/* Header / Navbar / topbar */
 header, nav, .navbar, .site-header {
   background: linear-gradient(180deg, rgba(20,20,25,.9), rgba(20,20,25,.65)); /* Fundo escuro translúcido */
-  border-bottom: 1px solid var(--fs-border); /* Borda inferior */
-  box-shadow: 0 10px 30px -20px var(--fs-glow); /* Brilho dourado sutil */
+  backdrop-filter: blur(6px);                       /* Desfoque estilo vidro */
+  border-bottom: 1px dashed var(--fs-border);       /* Borda inferior tracejada */
+  box-shadow: 0 10px 30px -20px var(--fs-glow);     /* Sombra dourada */
 }
 
-/* ---- Conteúdo, cards, artigos ---- */
+/* Estilo das caixas principais de conteúdo */
 main, article, .content, .prose, .card, .page, .post, .note {
-  background: linear-gradient(180deg, var(--fs-bg-elev), var(--fs-surface)); /* Fundo gradiente */
-  border: 1px solid var(--fs-border); /* Borda discreta */
-  border-radius: 14px; /* Cantos arredondados */
-  color: var(--fs-text); /* Garante texto legível */
+  background: linear-gradient(180deg, var(--fs-bg-elev), var(--fs-surface)); /* Fundo gradiente escuro */
+  border: 1px solid var(--fs-border);                                        /* Borda cinza escura */
+  border-radius: 14px;                                                       /* Cantos arredondados */
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.02) inset,                                   /* Contorno interno leve */
+    0 10px 35px -20px var(--fs-glow);                                        /* Sombra dourada suave */
+  padding: clamp(14px, 2vw, 22px);                                           /* Padding responsivo */
 }
 
-/* ---- Botões ---- */
+/* Botões padrão */
 button, .btn, input[type="submit"], .button {
-  background: linear-gradient(180deg, #2b2b32, #1f1f27); /* Fundo metálico escuro */
-  color: var(--fs-text); /* Texto claro */
+  background: linear-gradient(180deg, #2b2b32, #1f1f27); /* Fundo aço escuro */
+  color: var(--fs-text);                                 /* Cor do texto */
   border: 1px solid var(--fs-border);
   border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  transition: transform .06s ease, box-shadow .2s, border-color .2s;
 }
+
+/* Hover em botões */
 button:hover, .btn:hover, input[type="submit"]:hover, .button:hover {
-  border-color: var(--fs-primary); /* Borda dourada no hover */
-  color: var(--fs-primary);        /* Texto dourado no hover */
+  border-color: var(--fs-primary);                           /* Borda dourada */
+  box-shadow: 0 0 0 2px rgba(212,175,55,.15), 0 6px 24px -12px var(--fs-glow);
 }
 
-/* ---- Sidebar / TOC (aba lateral) ---- */
-.toc a,
-.table-of-contents a {
-  color: var(--fs-text-muted);        /* Texto padrão da sidebar */
-}
-.toc a:hover,
-.table-of-contents a:hover {
-  color: var(--fs-primary) !important; /* Texto dourado ao passar o mouse */
+/* Efeito de botão pressionado */
+button:active, .btn:active { transform: translateY(1px); }
+
+/* Estilo do título principal (logo / nome do site) */
+h1.site-title, .logo-text {
+  color: var(--fs-primary);                 /* Dourado */
+  text-shadow: 0 0 10px var(--fs-glow);     /* Brilho dourado */
+  letter-spacing: 1px;
 }
 
-/* ---- Blockquotes ---- */
+/* Blockquote (citações) */
 blockquote {
-  background: linear-gradient(180deg, #17171d, #15151a);
-  border-left: 3px solid var(--fs-primary); /* Barra dourada à esquerda */
-  color: var(--fs-text-muted); /* Texto secundário */
+  background: linear-gradient(180deg, #17171d, #15151a); /* Fundo levemente diferente */
+  border-left: 3px solid var(--fs-primary);              /* Barra dourada lateral */
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: var(--fs-text-muted);                           /* Texto dourado claro (no seu layout) */
 }
 
-/* ---- Código ---- */
-pre {
-  background: var(--fs-code-bg);  /* Fundo do bloco de código */
-  color: var(--fs-code-text);     /* Texto dentro do código */
-  border: 1px solid var(--fs-code-border);
+/* Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--fs-surface);
+  border: 1px solid var(--fs-border);
+  border-radius: 10px;
+  overflow: hidden;
 }
+
+/* Células */
+th, td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--fs-border);
+}
+
+/* Cabeçalho da tabela */
+th { background: #1d1d26; }
+
+/* Blocos de código */
+pre {
+  background: var(--fs-code-bg);         /* Fundo escuro */
+  color: var(--fs-code-text);            /* Texto claro */
+  border: 1px solid var(--fs-code-border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  overflow: auto;
+  box-shadow: 0 8px 24px -18px rgba(0,0,0,.55);
+}
+
+/* Código inline (dentro de frases) */
 code:not(pre code) {
   background: #1a1a22;
-  color: #f0e7d8; /* Cor mais clara para inline code */
+  color: #f0e7d8;
+  border: 1px solid #2e2e38;
+  padding: .15em .4em;
+  border-radius: 6px;
 }
 
-/* ---- Inputs ---- */
+/* Inputs / campos de busca */
 input[type="text"], input[type="search"], input[type="email"], textarea {
-  background: #16161c;    /* Fundo dos campos */
-  color: var(--fs-text);  /* Texto dentro do campo */
+  background: #16161c;
+  color: var(--fs-text);
   border: 1px solid var(--fs-border);
+  border-radius: 10px;
+  padding: 10px 12px;
 }
 input::placeholder, textarea::placeholder {
-  color: #8f8c85; /* Placeholder levemente acinzentado */
+  color: #8f8c85;
 }
 
-/* ---- Rodapé ---- */
+/* Caixa do sumário / tabela de conteúdos */
+.toc, .table-of-contents {
+  background: linear-gradient(180deg, #141419, #15151b);
+  border: 1px solid var(--fs-border);
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+
+/* Rodapé */
 footer {
-  color: var(--fs-text-muted); /* Texto mais suave */
+  color: var(--fs-text-muted);
   border-top: 1px solid var(--fs-border);
   background: linear-gradient(180deg, rgba(20,20,25,.65), rgba(20,20,25,.9));
+}
+
+/* Indicação visual de foco (acessibilidade p/ teclado) */
+:focus-visible {
+  outline: 2px solid var(--fs-primary);      /* Borda dourada */
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(212,175,55,.25);
 }
