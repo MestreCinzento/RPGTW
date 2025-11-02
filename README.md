@@ -8,17 +8,16 @@
 
 ---
 
-<div align="center" style="opacity:.85; font-size:.9rem;">
+<div align="center" style="opacity:.75; font-size:.8rem;">
 
 **Atribuição de conteúdo**
 
 Parte do conteúdo deste site é adaptado da  
-[Witcher Wiki (Fandom)](https://witcher.fandom.com/wiki/Witcher_Wiki), sob licença  
-[GFDL 1.3](https://www.gnu.org/licenses/fdl-1.3.html).
+[Witcher Wiki (Fandom)](https://witcher.fandom.com/wiki/Witcher_Wiki), sob licença [GFDL 1.3](https://www.gnu.org/licenses/fdl-1.3.html).
 
 Informações adicionais também baseadas na  
 [The Witcher Wiki (pt-BR)](https://witcher.fandom.com/pt-br/).
 
-Site criado apenas para fins ilustrativos e sem fins lucrativos, inspirado na obra  
-do mestre **Andrzej Sapkowski**.
+Site inspirado pelas obras do mestre **Andrzej Sapkowski**.
+Sem fins lucrativos.
 </div>
