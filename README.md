@@ -25,8 +25,7 @@
     Witcher Wiki (Fandom)
   </a>
   , sob licença{" "}
-  <a href="https://www.gnu.org/licenses/fdl-1.3.html" style={{ textDecoration: "none" }}>GFDL&nbsp;1.3
-  </a>
+  <a href="https://www.gnu.org/licenses/fdl-1.3.html" style={{ textDecoration: "none" }}>GFDL&nbsp;1.3 </a>
   <br />
   Informações adicionais também baseadas na:{" "}
   <a
