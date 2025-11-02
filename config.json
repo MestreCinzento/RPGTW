@@ -4,10 +4,6 @@
     "logo": "Logo.png",
     "title": "Os Contos Esquecidos"
   },
-
-{
-  "analytics": "G-THMZVK6WLX"
-},
   
   "giscus": {
     "repo": "mestrecinzento/RPGTW",
@@ -23,4 +19,7 @@
     "lang": "pt",
     "loading": "lazy"
   }
+}
+{
+  "analytics": "G-THMZVK6WLX"
 }
