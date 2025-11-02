@@ -19,5 +19,6 @@ Informações adicionais também baseadas na
 [The Witcher Wiki (pt-BR)](https://witcher.fandom.com/pt-br/).
 
 Site inspirado pelas obras do mestre **Andrzej Sapkowski**.
+
 Sem fins lucrativos.
 </div>
