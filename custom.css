@@ -1,213 +1,81 @@
-/* === RPG Dark for Flowershow === */
-/* Fontes para títulos e corpo */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+/* ===== RPG Dark — versão mínima e robusta ===== */
 
-/* ---- Paleta base (dark) ---- */
-:root,
-[data-theme="dark"] {
-  --fs-bg: #0e0e11;
-  --fs-bg-elev: #141419;
-  --fs-surface: #1a1a22;
-  --fs-text: #f6f3ec;        /* texto principal mais claro */
-  --fs-text-muted: #d0cbc2;  /* texto secundário mais legível */
-  --fs-primary: #d4af37;      /* dourado */
-  --fs-accent: #7a1f2b;       /* vinho */
-  --fs-accent-2: #375a7a;     /* aço azul */
-  --fs-link: #e2c15e;
-  --fs-link-hover: #ffd86a;
-  --fs-border: #2a2a33;
-  --fs-glow: rgba(212,175,55,.35);
-  --fs-code-bg: #111116;
-  --fs-code-border: #2b2b34;
-  --fs-code-text: #f5f5f5;
+/* Tipos opcionais (pode remover se não quiser carregar do Google) */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Crimson+Text:wght@400;600&display=swap');
 
-  /* Mapeia para nomes comuns que alguns temas usam */
-  --color-primary: var(--fs-primary);
-  --color-bg: var(--fs-bg);
-  --color-text: var(--fs-text);
-  --color-muted: var(--fs-text-muted);
-  --color-surface: var(--fs-surface);
-  --border-color: var(--fs-border);
+/* Paleta (direto nas propriedades, sem depender de variáveis do tema) */
+:root {
+  --bg: #0e0e11;
+  --bg-elev: #141419;
+  --surface: #1a1a22;
+  --text: #f6f3ec;       /* off-white */
+  --text-muted: #d0cbc2;
+  --gold: #d4af37;       /* dourado hover */
+  --link: #f2d87c;       /* link visível */
+  --link-hover: #ffe8a4;
+  --border: #2a2a33;
+  --code-bg: #111116;
+  --code-border: #2b2b34;
+  --code-text: #f5f5f5;
 }
 
-/* ---- Plano de fundo e tipografia ---- */
+/* Plano de fundo + texto base */
 html, body {
   background:
     radial-gradient(1200px 800px at 80% -10%, rgba(116,24,34,.08), transparent 60%),
     radial-gradient(900px 600px at -10% 80%, rgba(55,90,122,.08), transparent 60%),
-    linear-gradient(180deg, #0c0c0f 0%, var(--fs-bg) 20%, var(--fs-bg) 100%);
-  color: var(--fs-text);
+    linear-gradient(180deg, #0c0c0f 0%, var(--bg) 20%, var(--bg) 100%);
+  color: var(--text);
   font-family: "Crimson Text", ui-serif, Georgia, "Times New Roman", serif;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
 }
 
-/* Vários temas Flowershow usam classes utilitárias/Tailwind;
-   ainda assim, estilizar tags garante cobertura. */
+/* Títulos com “cara” de RPG */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cinzel", ui-serif, Georgia, serif;
-  color: var(--fs-text);
-  letter-spacing: .4px;
+  color: var(--text);
 }
-h1 { font-weight: 800; font-size: clamp(1.8rem, 2.6vw, 2.4rem); }
-h2 { font-weight: 700; font-size: clamp(1.5rem, 2.2vw, 2rem); }
-h3 { font-weight: 600; font-size: clamp(1.25rem, 1.8vw, 1.5rem); }
-
-/* Ornamentos RPG nos subtítulos */
+h1 { font-weight: 800; }
+h2 { font-weight: 700; }
+h3 { font-weight: 600; }
 h2::before, h2::after {
-  content: "✦";
-  font-family: "Cinzel", serif;
-  font-weight: 600;
-  color: rgba(212,175,55,.7);
-  margin: 0 .5rem;
+  content: "✦"; margin: 0 .5rem; color: rgba(212,175,55,.75);
 }
 
-/* Links */
-a {
-  color: var(--fs-link);
-  text-decoration: none;
-  border-bottom: 1px dashed rgba(226,193,94,.35);
-  transition: color .2s ease, text-shadow .2s ease, border-color .2s ease;
-}
-a:hover {
-  color: var(--fs-link-hover);
-  text-shadow: 0 0 8px var(--fs-glow);
-  border-color: rgba(255,216,106,.7);
-}
-
-/* Header / Navbar (classes variam entre temas, cobrimos tags comuns) */
-header, nav, .navbar, .site-header {
-  background: linear-gradient(180deg, rgba(20,20,25,.9), rgba(20,20,25,.65));
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--fs-border);
-  box-shadow: 0 10px 30px -20px var(--fs-glow);
-}
-
-/* Conteúdo, cards, artigos */
-main, article, .content, .prose, .card, .page, .post, .note {
-  background: linear-gradient(180deg, var(--fs-bg-elev), var(--fs-surface));
-  border: 1px solid var(--fs-border);
+/* Conteúdo principal (cobre boa parte dos layouts do FlowerShow) */
+.prose, main, article, .content, .page, .post, .note {
+  background: linear-gradient(180deg, var(--bg-elev), var(--surface));
+  border: 1px solid var(--border);
   border-radius: 14px;
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,.02) inset,
-    0 10px 35px -20px var(--fs-glow);
   padding: clamp(14px, 2vw, 22px);
 }
 
-/* Botões (inclui giscus/controles padrão) */
-button, .btn, input[type="submit"], .button {
-  background: linear-gradient(180deg, #2b2b32, #1f1f27);
-  color: var(--fs-text);
-  border: 1px solid var(--fs-border);
-  border-radius: 10px;
-  padding: 10px 14px;
-  font-weight: 600;
-  transition: transform .06s ease, box-shadow .2s, border-color .2s;
-}
-button:hover, .btn:hover, input[type="submit"]:hover, .button:hover {
-  border-color: var(--fs-primary);
-  box-shadow: 0 0 0 2px rgba(212,175,55,.15), 0 6px 24px -12px var(--fs-glow);
-}
-button:active, .btn:active { transform: translateY(1px); }
+/* Texto secundário */
+.prose p, p, li { color: var(--text); }
+.muted, .text-muted, small { color: var(--text-muted); }
 
-/* Destaque de título do site */
-h1.site-title, .logo-text {
-  color: var(--fs-primary);
-  text-shadow: 0 0 10px var(--fs-glow);
-  letter-spacing: 1px;
-}
-
-/* Listas / tabelas / citações */
-blockquote {
-  background: linear-gradient(180deg, #17171d, #15151a);
-  border-left: 3px solid var(--fs-primary);
-  padding: 10px 14px;
-  border-radius: 8px;
-  color: var(--fs-text-muted);
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: var(--fs-surface);
-  border: 1px solid var(--fs-border);
-  border-radius: 10px;
-  overflow: hidden;
-}
-th, td { padding: 10px 12px; border-bottom: 1px solid var(--fs-border); }
-th { background: #1d1d26; }
-
-/* Código */
-pre {
-  background: var(--fs-code-bg);
-  color: var(--fs-code-text);
-  border: 1px solid var(--fs-code-border);
-  border-radius: 12px;
-  padding: 12px 14px;
-  overflow: auto;
-  box-shadow: 0 8px 24px -18px rgba(0,0,0,.55);
-}
-code:not(pre code) {
-  background: #1a1a22;
-  color: #f0e7d8;
-  border: 1px solid #2e2e38;
-  padding: .15em .4em;
-  border-radius: 6px;
-}
-
-/* Inputs / busca / TOC */
-input[type="text"], input[type="search"], input[type="email"], textarea {
-  background: #16161c;
-  color: var(--fs-text);
-  border: 1px solid var(--fs-border);
-  border-radius: 10px;
-  padding: 10px 12px;
-}
-input::placeholder, textarea::placeholder { color: #8f8c85; }
-.toc, .table-of-contents {
-  background: linear-gradient(180deg, #141419, #15151b);
-  border: 1px solid var(--fs-border);
-  border-radius: 12px;
-  padding: 10px 14px;
-}
-
-/* Rodapé */
-footer {
-  color: var(--fs-text-muted);
-  border-top: 1px solid var(--fs-border);
-  background: linear-gradient(180deg, rgba(20,20,25,.65), rgba(20,20,25,.9));
-}
-
-/* Foco / acessibilidade */
-:focus-visible {
-  outline: 2px solid var(--fs-primary);
-  outline-offset: 2px;
-  box-shadow: 0 0 0 4px rgba(212,175,55,.25);
-}
-/* Seleção de texto (arrastar com mouse) */
-::selection {
-  background: rgba(212, 175, 55, 0.35); /* dourado translúcido */
-  color: #ffffff; /* texto claro */
-}
-/* === CONTRASTE DE TEXTO MELHORADO === */
-:root,
-[data-theme="dark"] {
-  --fs-text: #f6f3ec;        /* texto principal */
-  --fs-text-muted: #d0cbc2;  /* texto secundário */
-}
-
-/* === LINKS MAIS VISÍVEIS === */
-a {
-  color: #f2d87c; /* dourado mais claro */
-  border-bottom: 1px dashed rgba(242,216,124,0.45);
-  text-decoration-color: rgba(242,216,124,0.35);
+/* Links visíveis */
+.prose a, a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(242,216,124,.45);
   text-underline-offset: 3px;
 }
-a:hover {
-  color: #ffe8a4;
-  border-bottom-color: rgba(255,232,164,0.9);
-  text-shadow: 0 0 8px rgba(212,175,55,0.4);
+.prose a:hover, a:hover {
+  color: var(--link-hover);
+  border-bottom-color: rgba(255,232,164,.9);
+  text-shadow: 0 0 8px rgba(212,175,55,.35);
 }
 
-/* === SELEÇÃO DE TEXTO (CTRL+A ou arrastar) === */
+/* Seleção de texto (arrastar o mouse) */
 ::selection {
-  background: rgba(212, 175, 5
+  background: rgba(212,175,55,.35);
+  color: #fff;
+}
+
+/* Botões — texto off-white; dourado NO HOVER/FOCUS/ACTIVE */
+button, .btn, [role="button"], input[type="submit"], .button {
+  color: var(--text) !important;
+  background: linear-gradient(180deg, #2b2b32, #1f1f27);
+  border: 1px solid var(--borde
