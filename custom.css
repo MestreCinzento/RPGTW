@@ -1,186 +1,135 @@
 /* === RPG Dark for Flowershow === */
-/* Fontes para títulos e corpo */
+/* Fontes usadas no tema */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
 /* ---- Paleta base (dark) ---- */
 :root,
 [data-theme="dark"] {
-  --fs-bg: #0e0e11; /* fundo */
-  --fs-bg-elev: #141419; /* fundo sob-plano */
-  --fs-surface: #1a1a22;
-  --fs-text: #e7e3dc; /* texto da barra lateral */
-  --fs-text-muted: #e2c15e;
-  --fs-primary: #d4af37;      /* dourado */
-  --fs-accent: #7a1f2b;       /* vinho */
-  --fs-accent-2: #375a7a;     /* aço azul */
-  --fs-link: #e2c15e;
-  --fs-link-hover: #e2c15e;
-  --fs-border: #2a2a33; /* caixa de texto*/
-  --fs-glow: rgba(212,175,55,.35);
-  --fs-code-bg: #111116;
-  --fs-code-border: #2b2b34;
-  --fs-code-text: #f5f5f5;
+  --fs-bg: #0e0e11;          /* Fundo geral da página */
+  --fs-bg-elev: #141419;     /* Fundo de elementos "elevados" (cards, seções, menus) */
+  --fs-surface: #1a1a22;     /* Fundo de superfícies internas (artigos, caixas, sidebar) */
+  --fs-text: #e7e3dc;        /* Cor do texto principal */
+  --fs-text-muted: #b9b4ac;  /* Cor de textos secundários (descrições, subtítulos, rodapé) */
+  --fs-primary: #d4af37;     /* Dourado — cor principal usada em destaques, bordas e hovers */
+  --fs-accent: #7a1f2b;      /* Vermelho vinho — acentos visuais, detalhes temáticos */
+  --fs-accent-2: #375a7a;    /* Azul aço — acento secundário opcional */
+  --fs-link: #e2c15e;        /* Cor dos links normais */
+  --fs-link-hover: #ffd86a;  /* Cor dos links quando o mouse passa por cima */
+  --fs-border: #2a2a33;      /* Cor das bordas (cards, tabelas, divisores) */
+  --fs-glow: rgba(212,175,55,.35); /* Brilho dourado suave usado em sombras */
+  --fs-code-bg: #111116;     /* Fundo de blocos de código */
+  --fs-code-border: #2b2b34; /* Borda de blocos de código */
+  --fs-code-text: #f5f5f5;   /* Texto dentro de blocos de código */
 
-  /* Mapeia para nomes comuns que alguns temas usam */
-  --color-primary: var(--fs-primary);
-  --color-bg: var(--fs-bg);
-  --color-text: var(--fs-text);
-  --color-muted: var(--fs-text-muted);
-  --color-surface: var(--fs-surface);
-  --border-color: var(--fs-border);
+  /* Compatibilidade com outros temas Flowershow */
+  --color-primary: var(--fs-primary);  /* Mapeia o dourado para temas que usam "color-primary" */
+  --color-bg: var(--fs-bg);            /* Mapeia o fundo global */
+  --color-text: var(--fs-text);        /* Mapeia o texto principal */
+  --color-muted: var(--fs-text-muted); /* Mapeia o texto secundário */
+  --color-surface: var(--fs-surface);  /* Mapeia superfícies (cards/boxes) */
+  --border-color: var(--fs-border);    /* Mapeia cor de borda */
 }
 
 /* ---- Plano de fundo e tipografia ---- */
 html, body {
   background:
+    /* Gradientes sutis para dar textura ao fundo */
     radial-gradient(1200px 800px at 80% -10%, rgba(116,24,34,.08), transparent 60%),
     radial-gradient(900px 600px at -10% 80%, rgba(55,90,122,.08), transparent 60%),
     linear-gradient(180deg, #0c0c0f 0%, var(--fs-bg) 20%, var(--fs-bg) 100%);
-  color: var(--fs-text);
+  color: var(--fs-text); /* Texto padrão */
   font-family: "Crimson Text", ui-serif, Georgia, "Times New Roman", serif;
   line-height: 1.6;
-  text-rendering: optimizeLegibility;
 }
 
-/* Vários temas Flowershow usam classes utilitárias/Tailwind;
-   ainda assim, estilizar tags garante cobertura. */
+/* ---- Títulos ---- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Cinzel", ui-serif, Georgia, serif;
-  color: var(--fs-text);
-  letter-spacing: .4px;
+  font-family: "Cinzel", serif; /* Fonte medieval */
+  color: var(--fs-text);        /* Mesma cor do texto principal */
 }
-h1 { font-weight: 800; font-size: clamp(1.8rem, 2.6vw, 2.4rem); }
-h2 { font-weight: 700; font-size: clamp(1.5rem, 2.2vw, 2rem); }
-h3 { font-weight: 600; font-size: clamp(1.25rem, 1.8vw, 1.5rem); }
-
-/* Ornamentos RPG nos subtítulos */
 h2::before, h2::after {
-  content: "✦";
-  font-family: "Cinzel", serif;
-  font-weight: 600;
-  color: rgba(212,175,55,.7);
-  margin: 0 .5rem;
+  content: "✦";                 /* Símbolo decorativo RPG */
+  color: rgba(212,175,55,.7);   /* Dourado translúcido */
 }
 
-/* Links */
+/* ---- Links ---- */
 a {
-  color: var(--fs-link);
-  text-decoration: none;
+  color: var(--fs-link);         /* Dourado suave */
   border-bottom: 1px dashed rgba(226,193,94,.35);
-  transition: color .2s ease, text-shadow .2s ease, border-color .2s ease;
 }
 a:hover {
-  color: var(--fs-link-hover);
+  color: var(--fs-link-hover);   /* Dourado mais forte no hover */
   text-shadow: 0 0 8px var(--fs-glow);
-  border-color: rgba(255,216,106,.7);
 }
 
-/* Header / Navbar (classes variam entre temas, cobrimos tags comuns) */
+/* ---- Header / Navbar ---- */
 header, nav, .navbar, .site-header {
-  background: linear-gradient(180deg, rgba(20,20,25,.9), rgba(20,20,25,.65));
-  backdrop-filter: blur(6px);
-  border-bottom: 1px dashed var(--fs-border);
-  box-shadow: 0 10px 30px -20px var(--fs-glow);
-  hover: 1px dashed var(--fs-primary);
+  background: linear-gradient(180deg, rgba(20,20,25,.9), rgba(20,20,25,.65)); /* Fundo escuro translúcido */
+  border-bottom: 1px solid var(--fs-border); /* Borda inferior */
+  box-shadow: 0 10px 30px -20px var(--fs-glow); /* Brilho dourado sutil */
 }
 
-/* Conteúdo, cards, artigos */
+/* ---- Conteúdo, cards, artigos ---- */
 main, article, .content, .prose, .card, .page, .post, .note {
-  background: linear-gradient(180deg, var(--fs-bg-elev), var(--fs-surface));
-  border: 1px solid var(--fs-border);
-  border-radius: 14px;
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,.02) inset,
-    0 10px 35px -20px var(--fs-glow);
-  padding: clamp(14px, 2vw, 22px);
+  background: linear-gradient(180deg, var(--fs-bg-elev), var(--fs-surface)); /* Fundo gradiente */
+  border: 1px solid var(--fs-border); /* Borda discreta */
+  border-radius: 14px; /* Cantos arredondados */
+  color: var(--fs-text); /* Garante texto legível */
 }
 
-/* Botões (inclui giscus/controles padrão) */
+/* ---- Botões ---- */
 button, .btn, input[type="submit"], .button {
-  background: linear-gradient(180deg, #2b2b32, #1f1f27);
-  color: var(--fs-text);
+  background: linear-gradient(180deg, #2b2b32, #1f1f27); /* Fundo metálico escuro */
+  color: var(--fs-text); /* Texto claro */
   border: 1px solid var(--fs-border);
   border-radius: 10px;
-  padding: 10px 14px;
-  font-weight: 600;
-  transition: transform .06s ease, box-shadow .2s, border-color .2s;
 }
 button:hover, .btn:hover, input[type="submit"]:hover, .button:hover {
-  border-color: var(--fs-primary);
-  box-shadow: 0 0 0 2px rgba(212,175,55,.15), 0 6px 24px -12px var(--fs-glow);
-}
-button:active, .btn:active { transform: translateY(1px); }
-
-/* Destaque de título do site */
-h1.site-title, .logo-text {
-  color: var(--fs-primary);
-  text-shadow: 0 0 10px var(--fs-glow);
-  letter-spacing: 1px;
+  border-color: var(--fs-primary); /* Borda dourada no hover */
+  color: var(--fs-primary);        /* Texto dourado no hover */
 }
 
-/* Listas / tabelas / citações */
+/* ---- Sidebar / TOC (aba lateral) ---- */
+.toc a,
+.table-of-contents a {
+  color: var(--fs-text-muted);        /* Texto padrão da sidebar */
+}
+.toc a:hover,
+.table-of-contents a:hover {
+  color: var(--fs-primary) !important; /* Texto dourado ao passar o mouse */
+}
+
+/* ---- Blockquotes ---- */
 blockquote {
   background: linear-gradient(180deg, #17171d, #15151a);
-  border-left: 3px solid var(--fs-primary);
-  padding: 10px 14px;
-  border-radius: 8px;
-  color: var(--fs-text-muted);
+  border-left: 3px solid var(--fs-primary); /* Barra dourada à esquerda */
+  color: var(--fs-text-muted); /* Texto secundário */
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: var(--fs-surface);
-  border: 1px solid var(--fs-border);
-  border-radius: 10px;
-  overflow: hidden;
-}
-th, td { padding: 10px 12px; border-bottom: 1px solid var(--fs-border); }
-th { background: #1d1d26; }
 
-/* Código */
+/* ---- Código ---- */
 pre {
-  background: var(--fs-code-bg);
-  color: var(--fs-code-text);
+  background: var(--fs-code-bg);  /* Fundo do bloco de código */
+  color: var(--fs-code-text);     /* Texto dentro do código */
   border: 1px solid var(--fs-code-border);
-  border-radius: 12px;
-  padding: 12px 14px;
-  overflow: auto;
-  box-shadow: 0 8px 24px -18px rgba(0,0,0,.55);
 }
 code:not(pre code) {
   background: #1a1a22;
-  color: #f0e7d8;
-  border: 1px solid #2e2e38;
-  padding: .15em .4em;
-  border-radius: 6px;
+  color: #f0e7d8; /* Cor mais clara para inline code */
 }
 
-/* Inputs / busca / TOC */
+/* ---- Inputs ---- */
 input[type="text"], input[type="search"], input[type="email"], textarea {
-  background: #16161c;
-  color: var(--fs-text);
+  background: #16161c;    /* Fundo dos campos */
+  color: var(--fs-text);  /* Texto dentro do campo */
   border: 1px solid var(--fs-border);
-  border-radius: 10px;
-  padding: 10px 12px;
 }
-input::placeholder, textarea::placeholder { color: #8f8c85; }
-.toc, .table-of-contents {
-  background: linear-gradient(180deg, #141419, #15151b);
-  border: 1px solid var(--fs-border);
-  border-radius: 12px;
-  padding: 10px 14px;
+input::placeholder, textarea::placeholder {
+  color: #8f8c85; /* Placeholder levemente acinzentado */
 }
 
-/* Rodapé */
+/* ---- Rodapé ---- */
 footer {
-  color: var(--fs-text-muted);
+  color: var(--fs-text-muted); /* Texto mais suave */
   border-top: 1px solid var(--fs-border);
   background: linear-gradient(180deg, rgba(20,20,25,.65), rgba(20,20,25,.9));
-}
-
-/* Foco / acessibilidade */
-:focus-visible {
-  outline: 2px solid var(--fs-primary);
-  outline-offset: 2px;
-  box-shadow: 0 0 0 4px rgba(212,175,55,.25);
 }
