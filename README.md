@@ -11,7 +11,7 @@
   style={{
     textAlign: "center",
     fontSize: "0.8rem",
-    lineHeight: "0.5",
+    lineHeight: "0.3",
     opacity: 0.85,
     marginTop: "auto",
     paddingBottom: "1rem",
@@ -24,7 +24,8 @@
   >
     Witcher Wiki (Fandom)
   </a>
-  , sob licença{" "}
+  <br />
+  sob licença{" "}
   <a href="https://www.gnu.org/licenses/fdl-1.3.html" style={{ textDecoration: "none" }}>GFDL&nbsp;1.3 </a>
   <br />
   Informações adicionais também baseadas na:{" "}
@@ -35,8 +36,7 @@
     The Witcher Wiki pt-BR
   </a>
   <br />
-  Inspirado nas obras do mestre Andrzej Sapkowski, 
-  <br />
+  Inspirado nas obras do mestre Andrzej Sapkowski,
   sem fins lucrativos.
 </p>
 
