@@ -5,3 +5,9 @@
   "title": "Os Contos Esquecidos"
     }
 }
+{
+  "theme": {
+    "defaultMode": "dark",
+    "showModeSwitch": true
+  }
+}
