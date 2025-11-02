@@ -7,8 +7,6 @@
 
   "analytics": "G-THMZVK6WLX",
   
-  "scripts": ["custom-footer.js"],
-  
   "giscus": {
     "repo": "mestrecinzento/RPGTW",
     "repoId": "R_kgDOQN1kIg",
