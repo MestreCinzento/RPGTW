@@ -17,7 +17,6 @@
     paddingBottom: "1rem",
   }}
 >
- <p>
  Uma parte do conteúdo deste site é adaptado da
   <a 
     href="https://witcher.fandom.com/wiki/Witcher_Wiki" 
@@ -27,14 +26,15 @@
     href="https://www.gnu.org/licenses/fdl-1.3.html" 
     style={{ textDecoration: "none" }}
     >GFDL&nbsp;1.3 </a>.
+  <p></p>
   Informações adicionais também baseadas na
   <a 
     href="https://witcher.fandom.com/pt-br/" 
     style={{ textDecoration: "none" }}
     >The Witcher Wiki pt-BR</a>.
   <p></p>
-  Inspirado nas obras do mestre Andrzej Sapkowski, 
+  Inspirado nas obras do mestre Andrzej Sapkowski,
   <p></p>
   sem fins lucrativos.
- </p>
+</p>
   
