@@ -7,7 +7,7 @@
 <br />
 <br />
 ---
-<p style={{textAlign: "center",fontSize: "0.8rem",opacity: 0.85,marginTop: "0.1",paddingBottom: "1rem",}}
+<p style={{textAlign: "center",fontSize: "0.8rem",opacity: 0.85,line-height: "0.1",marginTop: "0.1",paddingBottom: "1rem",}}
 >
   Uma parte do conteúdo deste site é adaptado da{" "}
   <a href="https://witcher.fandom.com/wiki/Witcher_Wiki" style={{ textDecoration: "none" }}>Witcher Wiki (Fandom)</a>
