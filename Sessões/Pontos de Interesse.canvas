@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"5fcc0326a79533e9","type":"file","file":"Geografia e Política/Fotos e Mapas/Mapa.jpg","x":-2400,"y":3200,"width":8408,"height":11661},
+		{"id":"569008f8ac2e382b","type":"file","file":"Sessões/S1.md","x":1460,"y":4860,"width":80,"height":50}
+	],
+	"edges":[
+		{"id":"28ebc0721d8981fe","fromNode":"569008f8ac2e382b","fromSide":"right","toNode":"5fcc0326a79533e9","toSide":"top"},
+		{"id":"7f28005de22ac9d6","fromNode":"569008f8ac2e382b","fromSide":"left","toNode":"5fcc0326a79533e9","toSide":"top"},
+		{"id":"73bf31c1921381a6","fromNode":"569008f8ac2e382b","fromSide":"left","toNode":"5fcc0326a79533e9","toSide":"top"},
+		{"id":"63bd29ff7021a478","fromNode":"569008f8ac2e382b","fromSide":"right","toNode":"5fcc0326a79533e9","toSide":"top"}
+	]
+}
