@@ -79,17 +79,10 @@ a:hover {
 header, nav, .navbar, .site-header {
   background: linear-gradient(180deg, rgba(20,20,25,.9), rgba(20,20,25,.65));
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--fs-border);
+  border-bottom: 1px dashed var(--fs-border);
   box-shadow: 0 10px 30px -20px var(--fs-glow);
+  hover: 1px dashed var(--fs-primary);
 }
-
-nav a:hover,
-.sidebar a:hover,
-.toc a:hover,
-.table-of-contents a:hover {
-  color: var(--fs-primary) !important;
-}
-
 
 /* Conteúdo, cards, artigos */
 main, article, .content, .prose, .card, .page, .post, .note {
