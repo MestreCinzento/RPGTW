@@ -6,17 +6,19 @@
 
 
 
-<div className="site-footer">
-  <p>
-    Parte do conteúdo deste site é adaptado da
-    <a href="https://witcher.fandom.com/wiki/Witcher_Wiki">Witcher Wiki (Fandom)</a>,
-    sob licença <a href="https://www.gnu.org/licenses/fdl-1.3.html">GFDL 1.3</a>.
-  </p>
-  <p>
-    Informações adicionais também baseadas na
-    <a href="https://witcher.fandom.com/pt-br/">The Witcher Wiki (pt-BR)</a>.
-  </p>
-  <p>
-    Esse site é inspirado na grande obra do mestre Andrzej Sapkowski, sem fins lucrativos.
-  </p>
+---
+
+<div align="center" style="opacity:.85; font-size:.9rem;">
+
+**Atribuição de conteúdo**
+
+Parte do conteúdo deste site é adaptado da  
+[Witcher Wiki (Fandom)](https://witcher.fandom.com/wiki/Witcher_Wiki), sob licença  
+[GFDL 1.3](https://www.gnu.org/licenses/fdl-1.3.html).
+
+Informações adicionais também baseadas na  
+[The Witcher Wiki (pt-BR)](https://witcher.fandom.com/pt-br/).
+
+Site criado apenas para fins ilustrativos e sem fins lucrativos, inspirado na obra  
+do mestre **Andrzej Sapkowski**.
 </div>
