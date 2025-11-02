@@ -1,0 +1,20 @@
+views:
+  - type: table
+    name: Tabela
+    order:
+      - file.name
+      - file.tags
+      - aliases
+      - itens
+      - território
+      - Data
+    sort:
+      - property: Data
+        direction: ASC
+      - property: file.tags
+        direction: DESC
+    columnSize:
+      file.tags: 173
+      note.itens: 189
+      note.território: 174
+      note.Data: 82
