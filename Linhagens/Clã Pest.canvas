@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"1c31efd2be15e5be","x":520,"y":80,"width":400,"height":400,"type":"file","file":"Personas/Jogadores/Grimlei Pest.md"},
+		{"id":"468ad058c0c3047f","type":"file","file":"Linhagens/Linhagem Pest/Amora Pest.md","x":1080,"y":80,"width":400,"height":400},
+		{"id":"f0e0982b5f4b5045","x":1640,"y":80,"width":400,"height":400,"type":"file","file":"Personas/Inimigos e Rivais/Audrik.md"},
+		{"id":"fd550c5568f7310f","x":1360,"y":680,"width":400,"height":400,"type":"file","file":"Linhagens/Linhagem Pest/Audrin.md"},
+		{"id":"13d2c4e165fd9d39","type":"file","file":"Linhagens/Linhagem Pest/Execução de Yana Pest.md","x":800,"y":-480,"width":400,"height":400},
+		{"id":"f4084bf91d2d2912","type":"file","file":"Linhagens/Linhagem Pest/Thorfin Pest.md","x":240,"y":-480,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"4a26bf24f1ba4ae7","fromNode":"1c31efd2be15e5be","fromSide":"right","toNode":"468ad058c0c3047f","toSide":"left","toEnd":"none"},
+		{"id":"7a8c76c77d9bd387","fromNode":"13d2c4e165fd9d39","fromSide":"left","toNode":"1c31efd2be15e5be","toSide":"top"},
+		{"id":"8486ef7194252c04","fromNode":"f4084bf91d2d2912","fromSide":"right","toNode":"1c31efd2be15e5be","toSide":"top"},
+		{"id":"b1cfc1e66cd28425","fromNode":"f0e0982b5f4b5045","fromSide":"left","toNode":"fd550c5568f7310f","toSide":"top"},
+		{"id":"e8b97d8285bb4210","fromNode":"468ad058c0c3047f","fromSide":"right","toNode":"fd550c5568f7310f","toSide":"top"},
+		{"id":"c8e7d0dccca533a2","fromNode":"1c31efd2be15e5be","fromSide":"bottom","toNode":"fd550c5568f7310f","toSide":"left"}
+	]
+}
