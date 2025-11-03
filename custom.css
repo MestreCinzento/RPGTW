@@ -84,7 +84,7 @@ h2::before, h2::after {
 
 /* Estilização geral de links */
 a {
-  color: none;                                   /* Cor do link */
+  color: var(--fs-link);                                   /* Cor do link */
   text-decoration: none;
   border-bottom: none;         /* Linha tracejada dourada clara */
   transition: color .2s ease, text-shadow .2s ease, border-color .2s ease;
@@ -94,7 +94,7 @@ a {
 a:hover {
   color: var(--fs-link-hover);                             /* Cor ao passar o mouse */
   text-shadow: 0 0 8px var(--fs-glow);                     /* Brilho dourado */
-  border-color: rgba(255,216,106,.7);                      /* Borda mais forte */
+  border-color: none;                      /* Borda mais forte */
 }
 
 /* Header / Navbar / topbar */
