@@ -21,4 +21,19 @@
     "lang": "pt",
     "loading": "lazy"
   }
+
+  "showHero": true,
+  "title": "Os Contos Esquecidos",
+  "description": "Eu tenho um dragão!",
+  "image": "capa.jpg",
+  "cta": [
+    {
+      "href": "/about",
+      "label": "About"
+    },
+    {
+      "href": "/docs",
+      "label": "Docs"
+    }
+  ]
 }
