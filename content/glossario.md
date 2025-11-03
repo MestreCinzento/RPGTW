@@ -31,4 +31,29 @@
     dedup.push(x);
   }
 
-  // agrupa por prime
+  const groups = {};
+  for (const { title, href } of dedup) {
+    const first = title[0]
+      ?.toUpperCase()
+      ?.normalize('NFD')
+      ?.replace(/[^A-Z]/g, '#') || '#';
+    const key = (first >= 'A' && first <= 'Z') ? first : '#';
+    (groups[key] ||= []).push({ title, href });
+  }
+
+  const letters = Object.keys(groups).sort();
+  for (const L of letters) {
+    groups[L].sort((a,b) => a.title.localeCompare(b.title, 'pt-BR'));
+  }
+
+  const out = document.getElementById('glossario');
+  out.innerHTML = letters.map(L => {
+    const items = groups[L].map(({title, href}) => `<li><a href="${href}">${title}</a></li>`).join('');
+    const open = (L === 'A') ? ' open' : '';
+    return `<details${open} class="glossario-section">
+      <summary>${L}</summary>
+      <ul class="glossario-list">${items}</ul>
+    </details>`;
+  }).join('');
+})();
+</script>
