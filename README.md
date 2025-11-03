@@ -7,7 +7,7 @@
 <br />
 <br />
 ---
-<div style={{ textAlign: "center", fontSize: "0.8rem", opacity: 0.85, lineHeight: "1.3" }}>
+<div style={{ textAlign: "center", fontSize: "0.7rem", opacity: 0.7, lineHeight: "0.5" }}>
   <div>
     Uma parte do conteúdo deste site é adaptado da <a href="https://witcher.fandom.com/wiki/Witcher_Wiki">Witcher Wiki (Fandom)</a>, sob licença
     <a
@@ -16,7 +16,7 @@
     Informações adicionais também baseadas na
     <a href="https://witcher.fandom.com/pt-br/">The Witcher Wiki pt-BR</a>.
   </div>
-    Inspirado nas obras do mestre Andrzej Sapkowski, <p></p> 
+    Inspirado nas obras do mestre <a href="https://en.wikipedia.org/wiki/Andrzej_Sapkowski">Andrzej Sapkowski</a>, <p></p> 
     sem fins lucrativos.
   </div>
 </div>
