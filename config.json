@@ -1,6 +1,8 @@
 {
   "title": "Os Contos Esquecidos",
   "description": "blabla",
+  "logo": "Logo.png"
+    
   "showSidebar": true,
   "nav": {
     "logo": "Logo.png",
