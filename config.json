@@ -1,5 +1,6 @@
 { 
   "showSidebar": true,
+  "showEditLink": true,
   "nav": {
     "logo": "Logo.png",
     "title": "Os Contos Esquecidos" 
@@ -22,9 +23,8 @@
     "loading": "lazy"
   },
 
-  {
-  "showEditLink": true
-  },
+  
+  
 
   "theme": {
     "defaultMode": "dark",
