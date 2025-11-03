@@ -1,15 +1,3 @@
----
-showHero: true
-title: Os Contos Esquecidos
-description: Eu tenho um dragão!
-image: /hero.png
-cta:
-  - href: /about
-    label: About me
-  - href: /featured
-    label: Featured posts
----
-
 # Os Contos Esquecidos
 
 "O problema não é as pessoas te abandonarem, o problema é quando elas voltam."
