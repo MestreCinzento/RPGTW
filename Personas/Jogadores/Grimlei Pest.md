@@ -22,23 +22,40 @@ cta:
   - href: /featured
     label: Featured posts
 ---
-<style>
-.fs-hero {
-  min-height: 100vh;                /* ocupa a tela toda */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: visible !important;
-}
-.fs-hero img {
-  width: auto !important;
-  max-width: 100%;
-  max-height: 100vh;                /* nunca passa da altura da tela */
-  height: auto !important;
-  object-fit: contain !important;   /* mostra a imagem inteira */
-  display: block;
-}
-</style>
+<>
+  <style>{`
+    .fs-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0f1115;
+    }
+
+    .fs-hero-media {
+      overflow: visible !important;
+    }
+
+    .fs-hero-media img {
+      max-width: 100%;
+      max-height: 100vh;
+      width: auto;
+      height: auto;
+      object-fit: contain !important;  /* garante que não corta */
+      display: block;
+    }
+  `}</style>
+
+  <div class="fs-hero">
+    <div class="fs-hero-media">
+      <img
+        src="https://images.unsplash.com/photo-1520975693410-001d4a7748c5?q=80&w=1600&auto=format&fit=crop"
+        alt="Hero exemplo"
+      />
+    </div>
+  </div>
+</>
+
 
 
 
