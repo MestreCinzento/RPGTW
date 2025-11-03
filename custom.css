@@ -91,11 +91,11 @@ a {
 }
 
 /* Estilização no hover dos links */
-a:hover {
+/*a: hover {
   color: var(--fs-link-hover);                             /* Cor ao passar o mouse */
-  text-shadow: 0 0 8px var(--fs-glow);                     /* Brilho dourado */
-  border-color: none;                      /* Borda mais forte */
-}
+  /*text-shadow: 0 0 8px var(--fs-glow);                     /* Brilho dourado */
+  /*border-color: rgba(255,216,106,.7);                      /* Borda mais forte */
+/*}
 
 /* Header / Navbar / topbar */
 header, nav, .navbar, .site-header {
