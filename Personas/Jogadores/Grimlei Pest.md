@@ -12,7 +12,7 @@ tags:
   - guerreiro
 itens: "[[Passagens ao além]]"
 ---
-> [!info] [[FotoGrimlei.jpeg|Grimlei Pest,]] [[Cavaleiro de Geso, o Herói de Fen Aspra]]
+> [!info] [[Retratos/Personas/FotoGrimlei.jpeg|Grimlei Pest,]] [[Cavaleiro de Geso, o Herói de Fen Aspra]]
 
 # [[1192]]
 
