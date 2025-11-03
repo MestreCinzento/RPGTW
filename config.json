@@ -33,8 +33,8 @@
   "image": "/assets/hero.jpg",
   "cta": [
     {
-      "href": "/Bestiário",
-      "label": "Bestiário"
+      "href": "/glossario.md",
+      "label": "Glossário"
     },
     {
       "href": "/Personas",
