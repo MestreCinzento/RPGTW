@@ -16,7 +16,7 @@
     marginTop: "1rem",
     paddingBottom: "1rem",
   }}
-<p>
+>
  Uma parte do conteúdo deste site é adaptado da {<a href="https://witcher.fandom.com/wiki/Witcher_Wiki" 
     style={{ textDecoration: "none" }}>
     Witcher Wiki (Fandom)
