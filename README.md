@@ -17,15 +17,11 @@
     paddingBottom: "1rem",
   }}
 >
- Uma parte do conteúdo deste site é adaptado da {
-  <a 
+ Uma parte do conteúdo deste site é adaptado da
+  {<a 
     href="https://witcher.fandom.com/wiki/Witcher_Wiki" 
-    style={{ textDecoration: "none" }}
-    >
-    Witcher Wiki (Fandom)
-  </a>
-  }
-  , sob licença {
+    style={{ textDecoration: "none" }}>
+    Witcher Wiki (Fandom)</a>}, sob licença {
   <a 
     href="https://www.gnu.org/licenses/fdl-1.3.html" 
     style={{ textDecoration: "none" }}
