@@ -7,15 +7,6 @@
 <br />
 <br />
 ---
-<p
-  style={{
-    textAlign: "center",
-    fontSize: "0.7rem",
-    opacity: 0.7,
-    lineHeight: "0.3",
-    marginTop: "1rem",
-    paddingBottom: "1rem",
-  }}
 <div
   style={{
     textAlign: "center",
@@ -23,6 +14,7 @@
     opacity: 0.85,
     lineHeight: "1.3",
   }}
+>
   <div>
     Uma parte do conteúdo deste site é adaptado da{" "}
     <a
@@ -57,4 +49,5 @@
     sem fins lucrativos.
   </div>
 </div>
+
 
