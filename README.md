@@ -22,7 +22,8 @@
       style={{ textDecoration: "none", display: "inline", whiteSpace: "normal" }}
     >
       GFDL 1.3
-    </a>.
+    </a>
+    .
   </div>
 
   <div style={{ marginTop: "0.3rem" }}>
@@ -32,7 +33,8 @@
       style={{ textDecoration: "none", display: "inline", whiteSpace: "normal" }}
     >
       The Witcher Wiki pt-BR
-    </a>.
+    </a>
+    .
   </div>
 
   <div style={{ marginTop: "0.5rem" }}>
