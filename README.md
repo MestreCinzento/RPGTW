@@ -1,7 +1,7 @@
 ---
 showHero: true
 title: Os Contos Esquecidos
-description: "Eu fenho um dlagão!" - O Víbora Cinzenta, 1263dc.
+description: "Eu fenho um dlagão!" O Víbora Cinzenta, 1263dc.
 image: hero.jpg
 cta:
   - href: /glossario.md
