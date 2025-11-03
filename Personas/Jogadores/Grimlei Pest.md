@@ -22,6 +22,8 @@ cta:
   - href: /featured
     label: Featured posts
 ---
+
+
 <>
   <style>{`
     .fs-hero {
@@ -41,22 +43,11 @@ cta:
       max-height: 100vh;
       width: auto;
       height: auto;
-      object-fit: contain !important;  /* garante que não corta */
+      object-fit: contain !important;
       display: block;
     }
   `}</style>
-
-  <div class="fs-hero">
-    <div class="fs-hero-media">
-      <img
-        src="https://images.unsplash.com/photo-1520975693410-001d4a7748c5?q=80&w=1600&auto=format&fit=crop"
-        alt="Hero exemplo"
-      />
-    </div>
-  </div>
 </>
-
-
 
 
 # [[Cavaleiro de Geso, o Herói de Fen Aspra]]
