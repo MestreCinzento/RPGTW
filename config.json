@@ -3,6 +3,7 @@
   "nav": {
     "logo": "Logo.png",
     "title": "Os Contos Esquecidos"
+    "description": "blabla",
   },
 
   "analytics": "G-THMZVK6WLX",
@@ -21,6 +22,13 @@
     "lang": "pt",
     "loading": "lazy"
   },
+
+  
+  "theme": {
+    "defaultMode": "dark"
+    "showModeSwitch": true
+  }
+
 
   "showHero": true,
   "title": "Os Contos Esquecidos",
