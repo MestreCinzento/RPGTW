@@ -1,5 +1,14 @@
-# Os Contos Esquecidos
-
+---
+showHero: true
+title: Os Contos Esquecidos
+description: "Eu fenho um dlagão!" - O Víbora Cinzenta, 1263dc.
+image: hero.jpg
+cta:
+  - href: /glossario.md
+    label: Glossário
+  - href: /Personas
+    label: Personas
+---
 "O problema não é as pessoas te abandonarem, o problema é quando elas voltam."
 
 
