@@ -28,12 +28,12 @@
   "image": "/assets/hero.jpg",
   "cta": [
     {
-      "href": "/about",
-      "label": "About"
+      "href": "/Bestiário",
+      "label": "Bestiário"
     },
     {
-      "href": "/docs",
-      "label": "Docs"
+      "href": "/Personas",
+      "label": "Personas"
     }
   ]
 }
