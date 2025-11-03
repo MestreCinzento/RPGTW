@@ -1,7 +1,3 @@
-<style>
-.fs-hero img { object-fit: cover; object-position: 30% 50%; } /* ajuste os percentuais */
-</style>
-
 ---
 aliases:
   - Cavaleiro de Geso
@@ -26,7 +22,12 @@ cta:
   - href: /featured
     label: Featured posts
 ---
-[[Cavaleiro de Geso, o Herói de Fen Aspra]]
+
+<style>
+.fs-hero img { object-fit: cover; object-position: 30% 50%; } /* ajuste os percentuais */
+</style>
+
+#[[Cavaleiro de Geso, o Herói de Fen Aspra]]
 
 # [[1192]]
 
