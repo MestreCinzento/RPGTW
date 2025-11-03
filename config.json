@@ -32,7 +32,7 @@
   },
 
   "showHero": true,
-  "image": url"https://raw.githubusercontent.com/MestreCinzento/RPGTW/main/Retratos/hero.png",
+  "image": "https://raw.githubusercontent.com/MestreCinzento/RPGTW/main/Retratos/hero.png",
   "cta": [
     {
       "href": "content/glossario.md",
