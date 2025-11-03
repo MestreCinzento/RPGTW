@@ -2,7 +2,7 @@
   "showSidebar": true,
   "showEditLink": true,
   "nav": {
-    "logo": "Logo.png",
+    "logo": "public/Logo.png",
     "title": "Os Contos Esquecidos" 
   },
 
