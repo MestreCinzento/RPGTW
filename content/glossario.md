@@ -14,4 +14,4 @@
 
 <div id="glossario"></div>
 
-<script src="/glossario.js"></script>
+<script src="/public/glossario.js"></script>
