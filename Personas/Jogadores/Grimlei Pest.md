@@ -12,7 +12,15 @@ tags:
   - guerreiro
 itens: "[[Passagens ao além]]"
 
-image: /Retratos/Grimlei Pest.md
+showHero: true
+title: Grimlei Pest!
+description: Ultrajante! Ultrajante!
+image: /Retratos/FotoGrimlei.jpeg
+cta:
+  - href: /about
+    label: About me
+  - href: /featured
+    label: Featured posts
 ---
 [[Cavaleiro de Geso, o Herói de Fen Aspra]]
 
