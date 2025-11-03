@@ -84,7 +84,7 @@ h2::before, h2::after {
 
 /* Estilização geral de links */
 a {
-  color: var(--fs-link);                                   /* Cor do link */
+  color: none;                                   /* Cor do link */
   text-decoration: none;
   border-bottom: none;         /* Linha tracejada dourada clara */
   transition: color .2s ease, text-shadow .2s ease, border-color .2s ease;
