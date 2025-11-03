@@ -12,21 +12,17 @@
   <List dir="/content" pageSize={9999} />
 </div>
 
-<!-- 2) Saída final com abas -->
 <div id="glossario"></div>
 
-<!-- 3) Script: agrupa A-Z, remove duplicados e monta <details> -->
 <script>
 (function () {
   const src = document.getElementById('fs-source');
   if (!src) return;
 
-  // coleta todos os links das listas
   const rawLinks = Array.from(src.querySelectorAll('a'))
     .map(a => ({ title: a.textContent.trim(), href: a.getAttribute('href') }))
     .filter(x => x.title && x.href);
 
-  // remove duplicados (mesmo href)
   const dedup = [];
   const seen = new Set();
   for (const x of rawLinks) {
