@@ -23,21 +23,23 @@ cta:
     label: Featured posts
 ---
 <style>
-/* o container que segura a imagem não deve cortar */
-.fs-hero .fs-hero-media{
+.fs-hero {
+  min-height: 100vh;                /* ocupa a tela toda */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: visible !important;
-  height: auto !important;
-  max-height: none !important;
 }
-
-/* a imagem não pode ter altura fixa nem cover */
-.fs-hero img{
-  display: block;
-  width: 100% !important;
+.fs-hero img {
+  width: auto !important;
+  max-width: 100%;
+  max-height: 100vh;                /* nunca passa da altura da tela */
   height: auto !important;
-  object-fit: contain !important;  /* mostra a imagem inteira */
+  object-fit: contain !important;   /* mostra a imagem inteira */
+  display: block;
 }
 </style>
+
 
 
 # [[Cavaleiro de Geso, o Herói de Fen Aspra]]
