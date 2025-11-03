@@ -2,7 +2,7 @@
 showHero: true
 title: Os Contos Esquecidos
 description: Eu tenho um dragão!
-heroBackground: Geografia e Política/Fotos e Mapas/hero.jpg
+heroBackground: /Geografia e Política/Fotos e Mapas/hero.jpg
 heroStyle: full
 cta:
   - href: /about
