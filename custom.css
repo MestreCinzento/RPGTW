@@ -226,30 +226,33 @@ footer {
 }
 .content h1:first-of-type { display: none; }
 
-/* Hero: mostrar imagem inteira, sem corte (site inteiro) */
-.fs-hero,
-[class*="hero"] {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Escopo estrito: só o hero padrão do Flowershow */
+.fs-hero {
+  /* NÃO usa 100vh aqui, deixa a altura do hero ser a do “frame” abaixo */
+  display: block;
   overflow: visible !important;
 }
 
-/* Wrappers comuns (Next/Image, picture, figure) */
+/* Cria um “frame” com proporção fixa (gera as barras/grades) */
+.fs-hero .fs-hero-media {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;          /* controla o retângulo do hero */
+  background: #000;               /* barras (letterbox) */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 .fs-hero :is(picture, span, figure) {
-  height: auto !important;
+  height: 100%;
+  width: 100%;
   max-height: none !important;
-  overflow: visible !important;
 }
 
-/* A própria imagem: contém, sem cortar */
 .fs-hero :is(img, picture img) {
-  width: auto !important;
-  max-width: 100% !important;
-  height: auto !important;
-  max-height: 100vh !important;
-  object-fit: contain !important;
-  object-position: center center !important;
-  display: block !important;
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important; /* mostra a imagem inteira */
+  object-position: center center;
+  display: block;
 }
