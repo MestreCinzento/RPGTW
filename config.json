@@ -22,6 +22,10 @@
     "loading": "lazy"
   },
 
+  {
+  "showEditLink": true
+  }
+
   "theme": {
     "defaultMode": "dark",
     "showModeSwitch": true
