@@ -14,7 +14,7 @@ itens: "[[Passagens ao além]]"
 
 showHero: true
 description: Ultrajante! Ultrajante!
-image: /public/FotoGrimlei.jpeg
+image: /FotoGrimlei.jpeg
 cta:
   - href: /about
     label: About me
@@ -26,7 +26,7 @@ cta:
 .fs-hero img { object-fit: cover; object-position: 30% 50%; } /* ajuste os percentuais */
 </style>
 
-#[[Cavaleiro de Geso, o Herói de Fen Aspra]]
+# [[Cavaleiro de Geso, o Herói de Fen Aspra]]
 
 # [[1192]]
 
