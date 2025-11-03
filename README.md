@@ -2,8 +2,8 @@
 showHero: true
 title: Os Contos Esquecidos
 description: Eu tenho um dragão!
-image: hero.jpg
-heroBackground: hero.jpg
+image: /capa/hero.jpg
+heroBackground: /capa/hero.jpg
 heroStyle: full
 cta:
   - href: /about
