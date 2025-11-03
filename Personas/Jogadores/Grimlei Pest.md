@@ -23,33 +23,6 @@ cta:
     label: Featured posts
 ---
 
-
-<>
-  <style>{`
-    .fs-hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #0f1115;
-    }
-
-    .fs-hero-media {
-      overflow: visible !important;
-    }
-
-    .fs-hero-media img {
-      max-width: 100%;
-      max-height: 100vh;
-      width: auto;
-      height: auto;
-      object-fit: contain !important;
-      display: block;
-    }
-  `}</style>
-</>
-
-
 # [[Cavaleiro de Geso, o Herói de Fen Aspra]]
 
 # [[1192]]
