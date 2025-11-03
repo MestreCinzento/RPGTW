@@ -28,7 +28,7 @@
   },
 
   "showHero": true,
-  "title": "Os Contos Esquecidos",
+  "showTitleInContent": false,
   "description": "Eu tenho um dragão!",
   "image": "/assets/hero.jpg",
   "cta": [
