@@ -1,3 +1,15 @@
+---
+showHero: true
+title: Os Contos Esquecidos
+description: Eu tenho um dragão!
+image: /hero.png
+cta:
+  - href: /about
+    label: About me
+  - href: /featured
+    label: Featured posts
+---
+
 /* === RPG Dark for Flowershow === */
 
 /* Importa as fontes usadas nos títulos e no corpo do texto */
