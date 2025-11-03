@@ -225,10 +225,11 @@ footer {
   box-shadow: 0 0 0 4px rgba(212,175,55,.25);
 }
 
+/* === Hero full de fundo === */
 .hero {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh;                 /* ocupa a altura da tela */
   background-image: url("/assets/hero.jpg");
   background-size: cover;
   background-position: center;
@@ -237,6 +238,14 @@ footer {
   align-items: center;
 }
 
+/* Esconde a imagem/coluna padrão do tema para não “dividir” */
+.hero img,
+.hero picture,
+.hero > div:nth-child(2) {
+  display: none !important;
+}
+
+/* Máscara para legibilidade (opcional) */
 .hero::before {
   content: "";
   position: absolute;
@@ -245,6 +254,7 @@ footer {
   z-index: 1;
 }
 
+/* Conteúdo do hero por cima da máscara */
 .hero .hero__content {
   position: relative;
   z-index: 2;
