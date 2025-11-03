@@ -11,8 +11,10 @@ tags:
   - almarachada
   - guerreiro
 itens: "[[Passagens ao além]]"
+
+image: /Retratos/Grimlei Pest.md
 ---
-> [!info] [[FotoGrimlei.jpeg|Grimlei Pest,]] [[Cavaleiro de Geso, o Herói de Fen Aspra]]
+[[Cavaleiro de Geso, o Herói de Fen Aspra]]
 
 # [[1192]]
 
