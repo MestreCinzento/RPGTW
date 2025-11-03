@@ -9,35 +9,26 @@
 ---
 <div style={{ textAlign: "center", fontSize: "0.8rem", opacity: 0.85, lineHeight: "1.3" }}>
   <div>
-    Uma parte do conteúdo deste site é adaptado da{" "}
+    Uma parte do conteúdo deste site é adaptado da
     <a
-      href="https://witcher.fandom.com/wiki/Witcher_Wiki"
-      style={{ textDecoration: "none", display: "inline", whiteSpace: "normal" }}
-    >
-      Witcher Wiki (Fandom)
+      href="https://witcher.fandom.com/wiki/Witcher_Wiki">Witcher Wiki (Fandom)
     </a>
-    , sob licença{" "}
+    , sob licença
     <a
       href="https://www.gnu.org/licenses/fdl-1.3.html"
-      style={{ textDecoration: "none", display: "inline", whiteSpace: "normal" }}
     >
       GFDL 1.3
     </a>
     .
   </div>
-
-  <div style={{ marginTop: "0.3rem" }}>
-    Informações adicionais também baseadas na{" "}
-    <a
-      href="https://witcher.fandom.com/pt-br/"
-      style={{ textDecoration: "none", display: "inline", whiteSpace: "normal" }}
+    Informações adicionais também baseadas na
+    <a href="https://witcher.fandom.com/pt-br/"
     >
       The Witcher Wiki pt-BR
     </a>
     .
   </div>
-
-  <div style={{ marginTop: "0.5rem" }}>
-    Inspirado nas obras do mestre Andrzej Sapkowski, sem fins lucrativos.
+    Inspirado nas obras do mestre Andrzej Sapkowski, <p></p> 
+    sem fins lucrativos.
   </div>
 </div>
