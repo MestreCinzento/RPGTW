@@ -86,7 +86,7 @@ h2::before, h2::after {
 a {
   color: var(--fs-link);                                   /* Cor do link */
   text-decoration: none;
-  border-bottom: 1px dashed rgba(226,193,94,.35);          /* Linha tracejada dourada clara */
+  border-bottom: none;         /* Linha tracejada dourada clara */
   transition: color .2s ease, text-shadow .2s ease, border-color .2s ease;
 }
 
@@ -224,24 +224,3 @@ footer {
   outline-offset: 2px;
   box-shadow: 0 0 0 4px rgba(212,175,55,.25);
 }
-/* Remover sublinhado/estilo do Tailwind Typography */
-.prose a,
-.prose a:visited,
-.prose a:hover,
-.prose a:focus {
-  text-decoration: none !important;
-  text-decoration-style: solid !important;   /* evita pontilhado */
-  text-underline-offset: 0 !important;
-  text-decoration-thickness: auto !important;
-  background-image: none !important;         /* alguns temas usam bg/gradient como underline */
-  box-shadow: none !important;               /* e até shadow para “underline” */
-  display: inline !important;                /* garante que não quebre linha */
-}
-
-/* Se você usa variações de tipografia */
-.prose-sm a,
-.prose-lg a {
-  text-decoration: none !important;
-  display: inline !important;
-}
-
