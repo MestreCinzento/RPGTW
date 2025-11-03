@@ -23,7 +23,6 @@
     opacity: 0.85,
     lineHeight: "1.3",
   }}
->
   <div>
     Uma parte do conteúdo deste site é adaptado da{" "}
     <a
