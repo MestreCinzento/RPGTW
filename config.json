@@ -1,12 +1,12 @@
 {
+  "title": "Os Contos Esquecidos",
+  "description": "blabla",
   "showSidebar": true,
   "nav": {
     "logo": "Logo.png",
     "title": "Os Contos Esquecidos" 
   },
 
-  "description": "blabla",
-  
   "analytics": "G-THMZVK6WLX",
   
   "giscus": {
