@@ -14,7 +14,7 @@ itens: "[[Passagens ao além]]"
 
 showHero: true
 description: Ultrajante! Ultrajante!
-image: /FotoGrimlei.jpeg
+image: /public/FotoGrimlei.jpeg
 cta:
   - href: /about
     label: About me
