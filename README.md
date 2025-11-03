@@ -4,8 +4,8 @@ title: Os Contos Esquecidos
 description: Eu tenho um dragão!
 image: hero.jpg
 cta:
-  - href: /Bestiário
-    label: Bestiário
+  - href: /glossario.md
+    label: Glossário
   - href: /Personas
     label: Personas
 ---
