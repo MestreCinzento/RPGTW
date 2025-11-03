@@ -225,3 +225,31 @@ footer {
   box-shadow: 0 0 0 4px rgba(212,175,55,.25);
 }
 .content h1:first-of-type { display: none; }
+
+/* Hero: mostrar imagem inteira, sem corte (site inteiro) */
+.fs-hero,
+[class*="hero"] {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible !important;
+}
+
+/* Wrappers comuns (Next/Image, picture, figure) */
+.fs-hero :is(picture, span, figure) {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* A própria imagem: contém, sem cortar */
+.fs-hero :is(img, picture img) {
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 100vh !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+}
