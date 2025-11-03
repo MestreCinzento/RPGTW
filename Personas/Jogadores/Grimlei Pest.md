@@ -1,3 +1,7 @@
+<style>
+.fs-hero img { object-fit: cover; object-position: 30% 50%; } /* ajuste os percentuais */
+</style>
+
 ---
 aliases:
   - Cavaleiro de Geso
@@ -13,9 +17,9 @@ tags:
 itens: "[[Passagens ao além]]"
 
 showHero: true
-title: Grimlei Pest!
-description: Ultrajante! Ultrajante!
-image: /Retratos/FotoGrimlei.jpeg
+title: Grimlei Pest
+description: - Ultrajante! Ultrajante!
+image: /public/FotoGrimlei.jpeg
 cta:
   - href: /about
     label: About me
