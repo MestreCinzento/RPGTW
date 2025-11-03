@@ -22,10 +22,6 @@ cta:
     label: Featured posts
 ---
 
-<style>
-.fs-hero img { object-fit: cover; object-position: 30% 50%; } /* ajuste os percentuais */
-</style>
-
 # [[Cavaleiro de Geso, o Herói de Fen Aspra]]
 
 # [[1192]]
