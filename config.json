@@ -28,12 +28,10 @@
   },
 
   "showHero": true,
-  "showTitleInContent": false,
-  "description": "Eu tenho um dragão!",
   "image": "/assets/hero.jpg",
   "cta": [
     {
-      "href": "/glossario.md",
+      "href": "content/glossario.md",
       "label": "Glossário"
     },
     {
