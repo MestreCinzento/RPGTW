@@ -22,15 +22,13 @@ cta:
   - href: /featured
     label: Featured posts
 ---
-<style>
-.fs-hero .fs-hero-inner {
-  flex-direction: row-reverse;     /* se quiser imagem à esquerda ou à direita */
-}
-.fs-hero img {
-  object-fit: cover;
-  object-position: 30% 50%;       /* ajuste os percentuais conforme necessário */
-}
-</style>
+<style>{`
+  .fs-hero img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    }
+  `}</style>
 
 # [[Cavaleiro de Geso, o Herói de Fen Aspra]]
 
