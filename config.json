@@ -2,10 +2,11 @@
   "showSidebar": true,
   "nav": {
     "logo": "Logo.png",
-    "title": "Os Contos Esquecidos"
-    "description": "blabla",
+    "title": "Os Contos Esquecidos" 
   },
 
+  "description": "blabla",
+  
   "analytics": "G-THMZVK6WLX",
   
   "giscus": {
@@ -23,12 +24,10 @@
     "loading": "lazy"
   },
 
-  
   "theme": {
-    "defaultMode": "dark"
+    "defaultMode": "dark",
     "showModeSwitch": true
   }
-
 
   "showHero": true,
   "title": "Os Contos Esquecidos",
