@@ -224,3 +224,6 @@ footer {
   outline-offset: 2px;
   box-shadow: 0 0 0 4px rgba(212,175,55,.25);
 }
+.content h1:first-of-type {
+  display: none;
+}
