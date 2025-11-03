@@ -1,8 +1,3 @@
-# Os Contos Esquecidos
-
-"O problema não é as pessoas te abandonarem, o problema é quando elas voltam."
-
-
 ---
 showHero: true
 title: Os Contos Esquecidos
@@ -14,6 +9,11 @@ cta:
   - href: /featured
     label: Featured posts
 ---
+
+# Os Contos Esquecidos
+
+"O problema não é as pessoas te abandonarem, o problema é quando elas voltam."
+
 
 <br />
 <br />
