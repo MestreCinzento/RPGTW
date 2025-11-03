@@ -4,7 +4,7 @@ description: Índice alfabético de todas as páginas públicas.
 ---
 
 <List
-  dir="/main"
+  dir="/Bestiário"
   fields={["title", "description"]}
   pageSize={9999}
 />
