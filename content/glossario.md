@@ -1,5 +1,3 @@
-
-<!-- 1) Fontes “cruas” escondidas: uma <List> por pasta -->
 <div id="fs-source" style="display:none">
   <List dir="/Anos" pageSize={9999} />
   <List dir="/Assuntos Inacabados" pageSize={9999} />
