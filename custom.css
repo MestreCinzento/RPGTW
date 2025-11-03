@@ -61,6 +61,10 @@ html, body {
   text-rendering: optimizeLegibility;              /* Melhora suavização do texto */
 }
 
+.content h1:first-of-type {
+  display: none;
+}
+
 /* Aplica estilos aos títulos */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cinzel", serif; /* Fonte medieval para títulos */
