@@ -13,7 +13,6 @@ tags:
 itens: "[[Passagens ao além]]"
 
 showHero: true
-title: Grimlei Pest
 description: - Ultrajante! Ultrajante!
 image: /public/FotoGrimlei.jpeg
 cta:
