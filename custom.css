@@ -240,22 +240,29 @@ footer {
 .fs-hero .fs-hero-media {
   width: min(100%, 1100px);
   margin: 0 auto;
-  aspect-ratio: 16 / 9;          /* controla o retângulo do hero */
   background: var(--fs-hero-frame-bg);               /* barras (letterbox) */
   border-radius: 12px;
-  overflow: hidden;
+  padding: clamp(12px, 2.5vw, 20px);                 /* cria espaçamento sem cortar a imagem */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fs-hero :is(picture, span, figure) {
-  height: 100%;
   width: 100%;
-  max-height: none !important;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fs-hero :is(img, picture img) {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 70vh;
   object-fit: contain !important; /* mostra a imagem inteira */
   object-position: center center;
-  display: block;
 }
