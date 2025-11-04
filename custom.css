@@ -255,20 +255,22 @@ footer {
   height: 100%;
   width: 100%;
   max-height: none !important;
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .fs-hero :is(img, picture img) {
-  display: block;
   width: 100%;
   height: 100%;
+  display: block;
+  width: auto;
+  max-width: min(100%, 1100px);
   height: auto;
-  max-height: 70vh;
+  max-height: 80vh;
   object-fit: contain !important; /* mostra a imagem inteira */
   object-position: center center;
   display: block;
